@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Техномарт</title>
+</head>
 
-  </body>
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header">
+    <section class="user-controls">
+      <h2 class="visually-hidden">Пользовательские элементы управления</h2>
+
+      <a class="user-controls__logo">Техномарт</a>
+      <input class="user-controls__search" type="search" placeholder="Поиск:">
+      <a class="user-controls__bookmarks" href="#">Закладки:
+        <span class="user-controls__bookmarks-count">0</span></a>
+      <a class="user-controls__basket" href="#">Корзина:
+        <span class="user-controls__basket-count">0</span></a>
+      <a class="user-controls__buy" href="#">Оформить заказ</a>
+    </section>
+
+    <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта
+      <span class="visually-hidden">Техномарт</span></h1>
+    <a class="header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+    <address class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+
+    <nav>
+      <section class="user-nav">
+        <h2 class="visually-hidden">Пользовательская навигация</h2>
+
+        <div class="user-nav__not-logged">
+          <ul class="user-nav__not-logged-list">
+            <li><a class="user-nav__login" href="#">Войти</a></li>
+            <li><a class="user-nav__register" href="#">Регистрация</a></li>
+          </ul>
+        </div>
+
+        <div class="user-nav__logged user-nav__logged--hidden">
+          <p class="user-nav__profile-box">
+            <a class="user-nav__profile" href="#">Равшан Джамшутович</a>
+            <a class="user-nav__logout" href="#"></a>
+          </p>
+
+          <ul class="user-nav__logged-list">
+            <li><a class="user-nav__orders" href="#">Мои заказы</a></li>
+            <li><a class="user-nav__cabinet" href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="site-nav">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#">Главная</a></li>
+          <li><a class="site-nav__link" href="#">Компания</a></li>
+          <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li><a class="site-nav__link" href="#">Новости</a></li>
+          <li><a class="site-nav__link" href="#">Спецпредложения</a></li>
+          <li><a class="site-nav__link" href="#">Доставка</a></li>
+          <li><a class="site-nav__link" href="#">Контакты</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+</body>
+
 </html>
