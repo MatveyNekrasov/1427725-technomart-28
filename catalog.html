@@ -100,6 +100,21 @@
 
         <fieldset class="filter__fieldset">
           <legend class="filter__title">Цена:</legend>
+          <div class="filter__price-scale price-scale">
+            <div class="price-scale__empty-bar">
+              <div class="price-scale__filled-bar"></div>
+            </div>
+            <div class="price-scale__knob-min"></div>
+            <div class="price-scale__knob-max"></div>
+          </div>
+          <div class="filter__price-controls price-controls">
+            <label class="price-controls__min-label visually-hidden">от
+              <input class="price-controls__min-input" type="text" name="price-min" value="0">
+            </label>
+            <label class="price-controls__max-label visually-hidden">до
+              <input class="price-controls__max-input" type="text" name="price-max" value="15 000">
+            </label>
+          </div>
         </fieldset>
 
         <fieldset class="filter__fieldset">
