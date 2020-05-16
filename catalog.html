@@ -22,7 +22,9 @@
         <button>
           <span class="user-controls__search-btn visually-hidden">Найти</span>
         </button>
-        <input class="user-controls__search" type="search" placeholder="Поиск:">
+        <label class="visually-hidden">Поиск
+          <input class="user-controls__search" type="search" placeholder="Поиск:">
+        </label>
       </form>
       <a class="user-controls__bookmarks btn" href="#">Закладки:
         <span class="user-controls__bookmarks-count">0</span></a>
@@ -115,7 +117,7 @@
               <input class="price-controls__min-input" type="text" name="price-min" value="0">
             </label>
             <label class="price-controls__max-label visually-hidden">до
-              <input class="price-controls__max-input" type="text" name="price-max" value="15 000">
+              <input class="price-controls__max-input" type="text" name="price-max" value="30 000">
             </label>
           </div>
         </fieldset>
@@ -124,38 +126,33 @@
           <legend class="filter__title">Производители:</legend>
           <ul class="filter__list">
             <li>
-              <input class="filter__checkbox visually-hidden" name="manufacturer-bosch" id="filter__manufacturer-bosch"
-                type="checkbox" checked>
-              <label class="filter__label" for="filter__manufacturer-bosch">
-                Bosch
+              <label class="filter__label">
+                <input class="filter__checkbox visually-hidden" name="manufacturer-bosch" type="checkbox" checked>
+                <span>Bosch</span>
               </label>
             </li>
             <li>
-              <input class="filter__checkbox visually-hidden" name="manufacturer-interskol"
-                id="filter__manufacturer-interskol" type="checkbox">
-              <label class="filter__label" for="filter__manufacturer-interskol">
-                Интерскол
+              <label class="filter__label">
+                <input class="filter__checkbox visually-hidden" name="manufacturer-interskol" type="checkbox">
+                <span>Интерскол</span>
               </label>
             </li>
             <li>
-              <input class="filter__checkbox visually-hidden" name="manufacturer-makita"
-                id="filter__manufacturer-makita" type="checkbox" checked>
-              <label class="filter__label" for="filter__manufacturer-makita">
-                Makita
+              <label class="filter__label">
+                <input class="filter__checkbox visually-hidden" name="manufacturer-makita" type="checkbox" checked>
+                <span>Makita</span>
               </label>
             </li>
             <li>
-              <input class="filter__checkbox visually-hidden" name="manufacturer-dewalt"
-                id="filter__manufacturer-dewalt" type="checkbox">
-              <label class="filter__label" for="filter__manufacturer-dewalt">
-                Dewalt
+              <label class="filter__label">
+                <input class="filter__checkbox visually-hidden" name="manufacturer-dewalt" type="checkbox">
+                <span>Dewalt</span>
               </label>
             </li>
             <li>
-              <input class="filter__checkbox visually-hidden" name="manufacturer-hitachi"
-                id="filter__manufacturer-hitachi" type="checkbox">
-              <label class="filter__label" for="filter__manufacturer-hitachi">
-                Hitachi
+              <label class="filter__label">
+                <input class="filter__checkbox visually-hidden" name="manufacturer-hitachi" type="checkbox">
+                <span>Hitachi</span>
               </label>
             </li>
           </ul>
@@ -165,14 +162,16 @@
           <legend class="filter__title">Питание:</legend>
           <ul class="filter__list">
             <li>
-              <input class="filter__radio visually-hidden" name="powertype" value="cordless"
-                id="filter__powertype-cordless" type="radio" checked>
-              <label class="filter__label" for="filter__powertype-cordless">Аккумуляторные</label>
+              <label class="filter__label">
+                <input class="filter__radio visually-hidden" name="power-type" value="cordless" type="radio" checked>
+                <span>Аккумуляторные</span>
+              </label>
             </li>
             <li>
-              <input class="filter__radio visually-hidden" name="powertype" value="corded" id="filter__powertype-corded"
-                type="radio">
-              <label class="filter__label" for="filter__powertype-corded">Сетевые</label>
+              <label class="filter__label">
+                <input class="filter__radio visually-hidden" name="power-type" value="corded" type="radio">
+                <span>Сетевые</span>
+              </label>
             </li>
           </ul>
         </fieldset>
