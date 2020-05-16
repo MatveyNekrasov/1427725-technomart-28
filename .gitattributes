@@ -1,3 +1,5 @@
+*.css linguist-detectable=false
+
 * text eol=lf
 
 *.png binary

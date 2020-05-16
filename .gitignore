@@ -1,4 +1,10 @@
 refs/
+sass/
+gulpjs/
+dist/
+package.json
+package-lock.json
+gulpfile.js
 
 .DS_Store
 .idea
