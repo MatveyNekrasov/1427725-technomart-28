@@ -8,7 +8,7 @@ const cleancss = require('gulp-clean-css');
 const rename = require("gulp-rename");
 const browserSync = require('browser-sync').create();
 
-gulp.task('sass', function () {
+gulp.task('style', function () {
     return gulp.src('./sass/style.scss')
 
         // output non-minified CSS file
@@ -20,7 +20,7 @@ gulp.task('sass', function () {
         // .pipe(cleancss())
         // .pipe(rename({ extname: '.min.css' }))
         // .pipe(gulp.dest('css'))
-        .pipe(browserSync.reload({ stream: true }));
+        .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function () {
@@ -29,8 +29,8 @@ gulp.task('watch', function () {
         ui: false,
         notify: false
     });
-    gulp.series('sass')();
-    gulp.watch('sass/**/*.scss').on('change', gulp.series('sass', browserSync.reload));
+    gulp.series('style')();
+    gulp.watch('sass/**/*.scss').on('change', gulp.series('style'));
     gulp.watch('*.html').on('change', browserSync.reload);
 });
 
