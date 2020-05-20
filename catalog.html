@@ -81,7 +81,7 @@
 
   <main class="catalog">
 
-    <ul class="breadcrumbs catalog__breadcrumbs">
+    <ul class="catalog__breadcrumbs breadcrumbs">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="index.html"><span class="visually-hidden">Главная</span></a>
       </li>
@@ -180,25 +180,25 @@
       </form>
     </section>
 
-    <section class="sort">
+    <section class="products">
 
-      <div class="sort__head-wrapper">
-        <h2 class="sort__title">Сортировка:</h2>
-        <p class="sort__options">
-          <a class="sort__link sort__link--active" href="#">По цене</a>
-          <a class="sort__link" href="#">По типу</a>
-          <a class="sort__link" href="#">По функционалу</a>
-          <a class="sort__arrow sort__arrow--active" href="#">
-            <span class="visually-hidden">Down</span>
+      <div class="products__sort-row sort-row">
+        <h2 class="sort-row__title">Сортировка:</h2>
+        <p class="sort-row__options">
+          <a class="sort-row__link sort-row__link--active" href="#">По цене</a>
+          <a class="sort-row__link" href="#">По типу</a>
+          <a class="sort-row__link" href="#">По функционалу</a>
+          <a class="sort-row__arrow sort-row__arrow--active" href="#">
+            <span class="visually-hidden">По возрастанию</span>
           </a>
-          <a class="sort__arrow" href="#">
-            <span class="visually-hidden">Up</span>
+          <a class="sort-row__arrow" href="#">
+            <span class="visually-hidden">По убыванию</span>
           </a>
         </p>
       </div>
 
-      <ul class="sort__cards cards">
-        <li class="cards__item">
+      <ul class="products__list">
+        <li class="products__item">
           <article class="product">
             <img class="product__image" src="#" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <a class="product__btn-buy" href="#">Купить</a>
@@ -210,7 +210,7 @@
             </a>
           </article>
         </li>
-        <li class="cards__item">
+        <li class="products__item">
           <article class="product">
             <img class="product__image" src="#" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <a class="product__btn-buy" href="#">Купить</a>
@@ -218,10 +218,11 @@
             <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
             <p class="product__price-previous"><span class="cards__price-previous-value">30500</span> Р.</p>
             <a class="product__price-current" href="#">
-              <span class="product__price-current-value">25500</span> Р.</a>
+              <span class="product__price-current-value">25500</span> Р.
+            </a>
           </article>
         </li>
-        <li class="cards__item">
+        <li class="products__item">
           <article class="product product--new">
             <img class="product__image" src="#" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <a class="product__btn-buy" href="#">Купить</a>
@@ -229,11 +230,12 @@
             <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
             <p class="product__price-previous"><span class="cards__price-previous-value">30500</span> Р.</p>
             <a class="product__price-current" href="#">
-              <span class="product__price-current-value">25500</span> Р.</a>
+              <span class="product__price-current-value">25500</span> Р.
+            </a>
           </article>
         </li>
 
-        <li class="cards__item">
+        <li class="products__item">
           <article class="product product--new">
             <img class="product__image" src="#" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             <a class="product__btn-buy" href="#">Купить</a>
@@ -241,10 +243,11 @@
             <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
             <p class="product__price-previous"><span class="cards__price-previous-value">22500</span></p>
             <a class="product__price-current" href="#">
-              <span class="product__price-current-value">15500</span> Р.</a>
+              <span class="product__price-current-value">15500</span> Р.
+            </a>
           </article>
         </li>
-        <li class="cards__item">
+        <li class="products__item">
           <article class="product">
             <img class="product__image" src="#" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <a class="product__btn-buy" href="#">Купить</a>
@@ -252,10 +255,11 @@
             <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
             <p class="product__price-previous"><span class="cards__price-previous-value">30500</span></p>
             <a class="product__price-current" href="#">
-              <span class="product__price-current-value">25500</span> Р.</a>
+              <span class="product__price-current-value">25500</span> Р.
+            </a>
           </article>
         </li>
-        <li class="cards__item">
+        <li class="products__item">
           <article class="product product--new">
             <img class="product__image" src="#" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             <a class="product__btn-buy" href="#">Купить</a>
@@ -263,11 +267,12 @@
             <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
             <p class="product__price-previous"><span class="cards__price-previous-value"></span></p>
             <a class="product__price-current" href="#">
-              <span class="product__price-current-value">12500</span> Р.</a>
+              <span class="product__price-current-value">12500</span> Р.
+            </a>
           </article>
         </li>
 
-        <li class="cards__item">
+        <li class="products__item">
           <article class="product product--new">
             <img class="product__image" src="#" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             <a class="product__btn-buy" href="#">Купить</a>
@@ -275,10 +280,11 @@
             <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
             <p class="product__price-previous"><span class="cards__price-previous-value">22500</span></p>
             <a class="product__price-current" href="#">
-              <span class="product__price-current-value">15500</span> Р.</a>
+              <span class="product__price-current-value">15500</span> Р.
+            </a>
           </article>
         </li>
-        <li class="cards__item">
+        <li class="products__item">
           <article class="product">
             <img class="product__image" src="#" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             <a class="product__btn-buy" href="#">Купить</a>
@@ -286,10 +292,11 @@
             <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
             <p class="product__price-previous"><span class="cards__price-previous-value">30500</span></p>
             <a class="product__price-current" href="#">
-              <span class="product__price-current-value">25500</span> Р.</a>
+              <span class="product__price-current-value">25500</span> Р.
+            </a>
           </article>
         </li>
-        <li class="cards__item">
+        <li class="products__item">
           <article class="product product--new">
             <img class="product__image" src="#" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             <a class="product__btn-buy" href="#">Купить</a>
@@ -297,11 +304,12 @@
             <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
             <p class="product__price-previous"><span class="cards__price-previous-value"></span></p>
             <a class="product__price-current" href="#">
-              <span class="product__price-current-value">12500</span> Р.</a>
+              <span class="product__price-current-value">12500</span> Р.
+            </a>
           </article>
       </ul>
 
-      <p class="sort__pagination">
+      <p class="products__pagination">
         <a class="btn btn--active">1</a>
         <a class="btn" href="#">2</a>
         <a class="btn" href="#">3</a>
