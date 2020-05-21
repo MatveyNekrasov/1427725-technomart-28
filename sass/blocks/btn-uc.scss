@@ -1,0 +1,67 @@
+.btn-uc {
+  position: relative;
+
+  min-width: 150px;
+  padding: 9px 0;
+  box-sizing: border-box;
+
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-family: $cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+
+    background-color: #161D29;
+  }
+
+  &--bookmark,
+  &--basket {
+    padding-left: 20px;
+
+    &:hover::before {
+      opacity: 1.0;
+    }
+
+    &:active::before {
+      opacity: 0.3;
+    }
+  }
+
+  &--bookmark::before {
+    position: absolute;
+    content: url("/img/user-controls__icon-bookmark.svg");
+    top: 12px;
+    left: 20px;
+
+    opacity: 0.3;
+  }
+
+  &--basket::before {
+    position: absolute;
+    content: url("/img/user-controls__icon-basket.svg");
+    top: 11px;
+    left: 26px;
+
+    opacity: 0.3;
+  }
+
+  &--buy {
+    background-color: #63A63E;
+
+    &:hover {
+      background-color: #5FBB2D;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.5);
+
+      background-color: #63A63E;
+    }
+  }
+
+}

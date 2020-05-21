@@ -40,6 +40,184 @@
 
 .body {
   margin: 0;
-  color: black;
+  padding: 0;
+  min-width: 1200px;
   font-family: "Cuprum", "Tahoma", sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container-centering {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.user-controls {
+  color: #000;
+  background-color: #fff;
+}
+
+.user-controls--dark {
+  color: #fff;
+  background-color: #293449;
+}
+
+.user-controls__container {
+  min-height: 42px;
+  display: flex;
+}
+
+.user-controls__logo {
+  padding: 12px 0;
+  margin-bottom: -5px;
+  min-width: 220px;
+  text-align: center;
+  color: #fff;
+  background: #EE3643;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.user-controls__search-form {
+  display: flex;
+}
+
+.user-controls__search-form:hover g {
+  opacity: 1;
+}
+
+.user-controls__search-form:focus-within {
+  background-color: #fff;
+}
+
+.user-controls__search-form:focus-within path {
+  fill: #EE3643;
+}
+
+.user-controls__search-form:focus-within g {
+  opacity: 1;
+}
+
+.user-controls__search-form:focus-within > .user-controls__search-input {
+  color: #000;
+}
+
+.user-controls__search-btn {
+  width: 28px;
+  margin-left: 10px;
+  margin-right: 2px;
+  padding-top: 4px;
+  background-color: inherit;
+  border: none;
+}
+
+.user-controls__search-input {
+  width: 230px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: inherit;
+  border: none;
+}
+
+.user-controls__search-input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.user-controls__search-input::-moz-placeholder {
+  color: #fff;
+}
+
+.user-controls__search-input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.user-controls__search-input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.user-controls__search-input::placeholder {
+  color: #fff;
+}
+
+.user-controls__bookmarks {
+  margin-left: auto;
+}
+
+.btn-uc {
+  position: relative;
+  min-width: 150px;
+  padding: 9px 0;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.btn-uc:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #161D29;
+}
+
+.btn-uc--bookmark, .btn-uc--basket {
+  padding-left: 20px;
+}
+
+.btn-uc--bookmark:hover::before, .btn-uc--basket:hover::before {
+  opacity: 1.0;
+}
+
+.btn-uc--bookmark:active::before, .btn-uc--basket:active::before {
+  opacity: 0.3;
+}
+
+.btn-uc--bookmark::before {
+  position: absolute;
+  content: url("/img/user-controls__icon-bookmark.svg");
+  top: 12px;
+  left: 20px;
+  opacity: 0.3;
+}
+
+.btn-uc--basket::before {
+  position: absolute;
+  content: url("/img/user-controls__icon-basket.svg");
+  top: 11px;
+  left: 26px;
+  opacity: 0.3;
+}
+
+.btn-uc--buy {
+  background-color: #63A63E;
+}
+
+.btn-uc--buy:hover {
+  background-color: #5FBB2D;
+}
+
+.btn-uc--buy:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #63A63E;
 }

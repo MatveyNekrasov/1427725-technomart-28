@@ -1,6 +1,10 @@
 .body {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
 
-    color: black;
-    font-family: "Cuprum", "Tahoma", sans-serif;
+  font-family: $cuprum;
+  color: #000;
+
+  background-color: #fff;
 }

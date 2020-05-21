@@ -14,23 +14,32 @@
   <!-- HEADER -->
 
   <header class="header">
-    <section class="user-controls">
-      <h2 class="visually-hidden">Пользовательские элементы управления</h2>
+    <section class="user-controls user-controls--dark">
+      <div class="container-centering user-controls__container">
 
-      <a class="user-controls__logo">Техномарт</a>
-      <form method="get" action="https://echo.htmlacademy.ru">
-        <button>
-          <span class="user-controls__search-btn visually-hidden">Найти</span>
-        </button>
-        <label class="visually-hidden">Поиск
-          <input class="user-controls__search" type="search" placeholder="Поиск:">
-        </label>
-      </form>
-      <a class="user-controls__bookmarks btn" href="#">Закладки:
-        <span class="user-controls__bookmarks-count">0</span></a>
-      <a class="user-controls__basket btn" href="#">Корзина:
-        <span class="user-controls__basket-count">0</span></a>
-      <a class="user-controls__buy btn" href="#">Оформить заказ</a>
+        <h2 class="visually-hidden">Пользовательские элементы управления</h2>
+
+        <a class="user-controls__logo" href="#">
+          <img src="img/user-controls__logo.svg" width="108" height="18" alt="Техномарт">
+        </a>
+        <form class="user-controls__search-form" method="get" action="https://echo.htmlacademy.ru">
+          <button class="user-controls__search-btn">
+            <span class="visually-hidden">Найти</span>
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.3">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                  fill="white" />
+              </g>
+            </svg>
+          </button>
+          <input class="user-controls__search-input" type="search" placeholder="Поиск:">
+        </form>
+        <a class="user-controls__bookmarks btn-uc btn-uc--bookmark" href="#">Закладки: 0</a>
+        <a class="user-controls__basket btn-uc btn-uc--basket" href="#">Корзина: 0</a>
+        <a class="user-controls__buy btn-uc btn-uc--buy" href="#">Оформить заказ</a>
+
+      </div>
     </section>
 
     <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта
@@ -148,7 +157,8 @@
       <ul class="popular__list">
         <li class="popular__item">
           <article class="product">
-            <img class="product__image" src="img/product__bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+            <img class="product__image" src="img/product__bfg9000.jpg" width="184" height="164"
+              alt="Перфоратор BOSCH BFG 9000">
             <a class="product__btn-buy" href="#">Купить</a>
             <a class="product__btn-bookmark" href="#">В закладки</a>
             <h3 class="product__title">Перфоратор BOSCH BFG 9000</h3>
@@ -160,7 +170,8 @@
         </li>
         <li class="popular__item">
           <article class="product product--new">
-            <img class="product__image" src="img/product__bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+            <img class="product__image" src="img/product__bfg3000.jpg" width="127" height="112"
+              alt="Перфоратор BOSCH BFG 3000">
             <a class="product__btn-buy" href="#">Купить</a>
             <a class="product__btn-bookmark" href="#">В закладки</a>
             <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
@@ -172,7 +183,8 @@
         </li>
         <li class="popular__item">
           <article class="product">
-            <img class="product__image" src="img/product__bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+            <img class="product__image" src="img/product__bfg6000.jpg" width="144" height="128"
+              alt="Перфоратор BOSCH BFG 6000">
             <a class="product__btn-buy" href="#">Купить</a>
             <a class="product__btn-bookmark" href="#">В закладки</a>
             <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
@@ -184,7 +196,8 @@
         </li>
         <li class="popular__item">
           <article class="product product--new">
-            <img class="product__image" src="img/product__bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+            <img class="product__image" src="img/product__bfg2000.jpg" width="127" height="112"
+              alt="Перфоратор BOSCH BFG 2000">
             <a class="product__btn-buy" href="#">Купить</a>
             <a class="product__btn-bookmark" href="#">В закладки</a>
             <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
@@ -330,7 +343,8 @@
           заехав в наш офис:
         </p>
         <a class="contacts__map-link" href="#">
-          <img class="contacts__map-image" src="img/contacts__map.png" width="300" height="158" alt="Большая Конюшенная ул., 19">
+          <img class="contacts__map-image" src="img/contacts__map.png" width="300" height="158"
+            alt="Большая Конюшенная ул., 19">
         </a>
 
         <a class="contacts__btn-writeus btn" href="#">Заблудились? Напишите нам!</a>
