@@ -14,7 +14,7 @@
   <!-- HEADER -->
 
   <header class="header">
-    <section class="user-controls user-controls--dark">
+    <section class="user-controls">
       <div class="container-centering user-controls__container">
 
         <h2 class="visually-hidden">Пользовательские элементы управления</h2>
@@ -42,45 +42,47 @@
       </div>
     </section>
 
-    <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта
-      <span class="visually-hidden">Техномарт</span></h1>
-    <a class="header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-    <address class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+    <div class="header__container container-centering">
+      <h1 class="header__title">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта
+        <span class="visually-hidden">Техномарт</span></h1>
 
-    <nav>
-      <section class="user-nav">
+      <div class="header__container-phone-address">
+        <a class="header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <address class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+      </div>
+
+      <section class="header__user-nav user-nav">
         <h2 class="visually-hidden">Пользовательская навигация</h2>
 
-        <div class="user-nav__not-logged">
+        <div class="user-nav__controls user-nav__controls--hidden">
           <ul class="user-nav__not-logged-list">
-            <li><a class="user-nav__login" href="#">Войти</a></li>
-            <li><a class="user-nav__register" href="#">Регистрация</a></li>
+            <li><a class="user-nav__login btn-un btn-un--login" href="#">Войти</a></li>
+            <li><a class="user-nav__register btn-un btn-un--register" href="#">Регистрация</a></li>
           </ul>
         </div>
 
-        <div class="user-nav__logged user-nav__logged--hidden">
-          <p class="user-nav__profile-box">
-            <a class="user-nav__profile" href="#">Равшан Джамшутович</a>
-            <a class="user-nav__logout" href="#"></a>
-          </p>
+        <div class="user-nav__controls ">
+          <a class="user-nav__profile btn-un btn-un--profile" href="#">Равшан Джамшутович</a>
 
           <ul class="user-nav__logged-list">
-            <li><a class="user-nav__orders" href="#">Мои заказы</a></li>
-            <li><a class="user-nav__cabinet" href="#">Личный кабинет</a></li>
+            <li><a class="user-nav__orders link-un link-un--circle" href="#">Мои заказы</a></li>
+            <li><a class="user-nav__cabinet link-un" href="#">Личный кабинет</a></li>
           </ul>
         </div>
       </section>
-
+    </div>
+    
+    <nav class="container-centering">
       <section class="site-nav">
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="site-nav__list">
-          <li><a class="site-nav__link">Главная</a></li>
-          <li><a class="site-nav__link" href="#">Компания</a></li>
-          <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-          <li><a class="site-nav__link" href="#">Новости</a></li>
-          <li><a class="site-nav__link" href="#">Спецпредложения</a></li>
-          <li><a class="site-nav__link" href="#">Доставка</a></li>
-          <li><a class="site-nav__link" href="#">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">Компания</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">Новости</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">Спецпредложения</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">Доставка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">Контакты</a></li>
         </ul>
       </section>
     </nav>

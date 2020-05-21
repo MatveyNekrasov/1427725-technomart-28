@@ -1,0 +1,95 @@
+.btn-un {
+  position: relative;
+
+  display: block;
+  min-height: 45px;
+  padding: 12px 10px;
+  box-sizing: border-box;
+
+  color: #000;
+  font-family: $cuprum;
+  text-decoration: none;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+
+  background-color: #fff;
+
+  &:hover {
+    color: #EE3643;
+  }
+
+  &:active {
+    color: #C5C5C5;
+  }
+
+  &--login {
+    min-width: 121px;
+    padding-left: 28px;
+
+    &::before {
+      position: absolute;
+      content: url("/img/user-nav__icon-login.svg");
+      top: 13px;
+      left: 19px;
+    }
+
+    &:hover::before {
+      content: url("/img/user-nav__icon-login--hover.svg");
+    }
+
+    &:active::before {
+      content: url("/img/user-nav__icon-login.svg");
+    }
+
+  }
+
+  &--register {
+    min-width: 150px;
+  }
+
+  &--profile {
+    min-width: 300px;
+    padding-left: 11px;
+
+    &:hover {
+      color: #000;
+    }
+
+    &:active {
+      color: #C5C5C5;
+    }
+
+    &::before {
+      position: absolute;
+      content: url("/img/user-nav__icon-user.svg");
+      top: 13px;
+      left: 16px;
+    }
+
+    &:hover::before {
+      content: url("/img/user-nav__icon-user--hover.svg");
+    }
+
+    &:active::before {
+      content: url("/img/user-nav__icon-user.svg");
+    }
+
+    &::after {
+      position: absolute;
+      content: url("/img/user-nav__icon-logout.svg");
+      top: 14px;
+      right: 17px;
+    }
+
+    &:hover::after {
+      content: url("/img/user-nav__icon-logout--hover.svg");
+    }
+
+    &:active::after {
+      content: url("/img/user-nav__icon-logout.svg");
+    }
+  }
+}

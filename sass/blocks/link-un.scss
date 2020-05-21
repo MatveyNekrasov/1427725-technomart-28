@@ -1,0 +1,42 @@
+.link-un {
+  position: relative;
+
+  display: block;
+  padding: 7px 0;
+  box-sizing: border-box;
+
+  color: #32425C;
+  font-family: $cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+
+  &:hover {
+    color: #EE3643;
+  }
+
+  &:active {
+    color: #C5C5C5;
+  }
+
+  &--circle {
+    margin-right: 33px;
+  }
+
+  &--circle::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    top: 14px;
+    right: -19px;
+
+    border-radius: 50%;
+
+    background-color: #32425C;
+    pointer-events: none;
+    cursor: default;
+  }
+}

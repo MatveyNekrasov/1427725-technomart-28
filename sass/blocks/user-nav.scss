@@ -1,0 +1,32 @@
+.user-nav {
+  margin-left: auto;
+}
+
+.user-nav__controls {
+  &--hidden {
+    display: none;
+  }
+}
+
+.user-nav__not-logged-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-nav__login {
+  margin-right: 10px;
+}
+
+.user-nav__logged-list {
+  // width: 230px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+
+  // text-align: center;
+
+  list-style: none;
+}

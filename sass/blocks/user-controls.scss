@@ -1,13 +1,7 @@
 .user-controls {
-  color: #000;
+  color: #fff;
 
-  background-color: #fff;
-
-  &--dark {
-    color: #fff;
-
-    background-color: #293449;
-  }
+  background-color: #293449;
 }
 
 .user-controls__container {
@@ -23,12 +17,17 @@
   text-align: center;
   color: #fff;
 
-  background: #EE3643;
+  background-color: #EE3643;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+
+  &:active {
+    background-color: #BA2732;
+  }
 }
 
 .user-controls__search-form {
   display: flex;
+  flex-grow: 1;
 
   &:hover g {
     opacity: 1;
@@ -62,7 +61,9 @@
 }
 
 .user-controls__search-input {
-  width: 230px;
+  flex-grow: 1;
+
+  // width: 230px;
   font-family: $cuprum;
   color: #fff;
   font-size: 18px;
