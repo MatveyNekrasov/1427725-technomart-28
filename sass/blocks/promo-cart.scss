@@ -1,0 +1,87 @@
+.promo-cart {
+  position: relative;
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 23px;
+  padding-right: 21px;
+  width: 300px;
+  box-sizing: border-box;
+
+  color: #ffffff;
+
+  background-color: #32425c;
+
+  &--new::after {
+    position: absolute;
+    content: url("/img/common__flag-new.svg");
+    right: 0;
+    top: 0;
+  }
+
+  &--materials {
+    background: #ffbf47 url("/img/promo-cart--materials.svg") no-repeat;
+    background-position: 213px 31px;
+  }
+
+  &--instrument {
+    background: #3bbce3 url("/img/promo-cart--instrument.svg") no-repeat;
+    background-position: 194px 34px;
+  }
+
+  &--technics {
+    background: #dc91d8 url("/img/promo-cart--technics.svg") no-repeat;
+    background-position: 191px 31px;
+  }
+
+  &--discount {
+    background: #8ed78f url("/img/promo-cart--discount.svg") no-repeat;
+    background-position: 196px 26px;
+  }
+
+  &--delivery {
+    background: #ffc047 url("/img/promo-cart--delivery.svg") no-repeat;
+    background-position: 191px 32px;
+  }
+}
+
+.promo-cart__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 13px;
+
+  color: #ffffff;
+  font-family: $cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.promo-cart__link {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 0;
+  max-width: 135px;
+
+  color: #ffffff;
+  font-family: $cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: hsla(0, 0%, 100%, 0.3);
+
+  &:hover,
+  &:focus {
+    background-color: hsla(0, 0%, 77%, 0.3);
+  }
+
+  &:active {
+    background-color: hsla(0, 0%, 66%, 0.3);
+  }
+}

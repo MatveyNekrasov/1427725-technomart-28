@@ -17,11 +17,11 @@
   text-align: center;
   color: #fff;
 
-  background-color: #EE3643;
+  background-color: #ee3643;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 
   &:active {
-    background-color: #BA2732;
+    background-color: #ba2732;
   }
 }
 
@@ -29,15 +29,16 @@
   display: flex;
   flex-grow: 1;
 
-  &:hover g {
+  &:hover g,
+  &:focus g {
     opacity: 1;
   }
 
   &:focus-within {
-    background-color: #fff;
+    background-color: #ffffff;
 
     & path {
-      fill: #EE3643;
+      fill: #ee3643;
     }
 
     & g {
@@ -63,9 +64,8 @@
 .user-controls__search-input {
   flex-grow: 1;
 
-  // width: 230px;
   font-family: $cuprum;
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -74,7 +74,7 @@
   border: none;
 
   &::placeholder {
-    color: #fff;
+    color: #ffffff;
   }
 }
 

@@ -13,7 +13,8 @@
   line-height: 18px;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #EE3643;
   }
 

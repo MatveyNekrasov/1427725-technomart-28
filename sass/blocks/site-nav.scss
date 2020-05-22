@@ -33,7 +33,8 @@
   line-height: 24px;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #293449;
   }
 

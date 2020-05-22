@@ -23,7 +23,8 @@
   &--basket {
     padding-left: 20px;
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       opacity: 1.0;
     }
 
@@ -53,7 +54,8 @@
   &--buy {
     background-color: #63A63E;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #5FBB2D;
     }
 

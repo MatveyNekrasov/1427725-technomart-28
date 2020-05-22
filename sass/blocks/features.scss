@@ -1,0 +1,36 @@
+.features {
+  padding-top: 59px;
+}
+
+.features__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  margin-right: -30px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item-cart {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.features__column {
+  margin: 0;
+  padding: 0;
+
+  order: 1;
+  list-style: none;
+}
+
+.features__slider {
+  margin-right: 20px;
+  margin-bottom: 100px;
+}
+
+.features__slider-and-carts {
+  display: flex;
+}

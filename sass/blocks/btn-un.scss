@@ -17,7 +17,8 @@
 
   background-color: #fff;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #EE3643;
   }
 
@@ -36,7 +37,8 @@
       left: 19px;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       content: url("/img/user-nav__icon-login--hover.svg");
     }
 
@@ -54,7 +56,8 @@
     min-width: 300px;
     padding-left: 11px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #000;
     }
 
@@ -69,7 +72,8 @@
       left: 16px;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       content: url("/img/user-nav__icon-user--hover.svg");
     }
 
@@ -84,7 +88,8 @@
       right: 17px;
     }
 
-    &:hover::after {
+    &:hover::after,
+    &:focus::after {
       content: url("/img/user-nav__icon-logout--hover.svg");
     }
 
