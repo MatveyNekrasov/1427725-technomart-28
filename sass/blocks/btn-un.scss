@@ -32,18 +32,18 @@
 
     &::before {
       position: absolute;
-      content: url("/img/user-nav__icon-login.svg");
+      content: url("../img/user-nav__icon-login.svg");
       top: 13px;
       left: 19px;
     }
 
     &:hover::before,
     &:focus::before {
-      content: url("/img/user-nav__icon-login--hover.svg");
+      content: url("../img/user-nav__icon-login--hover.svg");
     }
 
     &:active::before {
-      content: url("/img/user-nav__icon-login.svg");
+      content: url("../img/user-nav__icon-login.svg");
     }
 
   }
@@ -67,34 +67,34 @@
 
     &::before {
       position: absolute;
-      content: url("/img/user-nav__icon-user.svg");
+      content: url("../img/user-nav__icon-user.svg");
       top: 13px;
       left: 16px;
     }
 
     &:hover::before,
     &:focus::before {
-      content: url("/img/user-nav__icon-user--hover.svg");
+      content: url("../img/user-nav__icon-user--hover.svg");
     }
 
     &:active::before {
-      content: url("/img/user-nav__icon-user.svg");
+      content: url("../img/user-nav__icon-user.svg");
     }
 
     &::after {
       position: absolute;
-      content: url("/img/user-nav__icon-logout.svg");
+      content: url("../img/user-nav__icon-logout.svg");
       top: 14px;
       right: 17px;
     }
 
     &:hover::after,
     &:focus::after {
-      content: url("/img/user-nav__icon-logout--hover.svg");
+      content: url("../img/user-nav__icon-logout--hover.svg");
     }
 
     &:active::after {
-      content: url("/img/user-nav__icon-logout.svg");
+      content: url("../img/user-nav__icon-logout.svg");
     }
   }
 }

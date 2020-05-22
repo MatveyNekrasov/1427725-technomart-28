@@ -213,7 +213,7 @@ input[type="radio"].visually-hidden {
 
 .btn-uc--bookmark::before {
   position: absolute;
-  content: url("/img/user-controls__icon-bookmark.svg");
+  content: url("../img/user-controls__icon-bookmark.svg");
   top: 12px;
   left: 20px;
   opacity: 0.3;
@@ -221,7 +221,7 @@ input[type="radio"].visually-hidden {
 
 .btn-uc--basket::before {
   position: absolute;
-  content: url("/img/user-controls__icon-basket.svg");
+  content: url("../img/user-controls__icon-basket.svg");
   top: 11px;
   left: 26px;
   opacity: 0.3;
@@ -286,7 +286,7 @@ input[type="radio"].visually-hidden {
 
 .header__phone::before {
   position: absolute;
-  content: url("/img/user-controls__icon-phone.svg");
+  content: url("../img/user-controls__icon-phone.svg");
   top: 3px;
   left: 36px;
 }
@@ -364,17 +364,17 @@ input[type="radio"].visually-hidden {
 
 .btn-un--login::before {
   position: absolute;
-  content: url("/img/user-nav__icon-login.svg");
+  content: url("../img/user-nav__icon-login.svg");
   top: 13px;
   left: 19px;
 }
 
 .btn-un--login:hover::before, .btn-un--login:focus::before {
-  content: url("/img/user-nav__icon-login--hover.svg");
+  content: url("../img/user-nav__icon-login--hover.svg");
 }
 
 .btn-un--login:active::before {
-  content: url("/img/user-nav__icon-login.svg");
+  content: url("../img/user-nav__icon-login.svg");
 }
 
 .btn-un--register {
@@ -396,32 +396,32 @@ input[type="radio"].visually-hidden {
 
 .btn-un--profile::before {
   position: absolute;
-  content: url("/img/user-nav__icon-user.svg");
+  content: url("../img/user-nav__icon-user.svg");
   top: 13px;
   left: 16px;
 }
 
 .btn-un--profile:hover::before, .btn-un--profile:focus::before {
-  content: url("/img/user-nav__icon-user--hover.svg");
+  content: url("../img/user-nav__icon-user--hover.svg");
 }
 
 .btn-un--profile:active::before {
-  content: url("/img/user-nav__icon-user.svg");
+  content: url("../img/user-nav__icon-user.svg");
 }
 
 .btn-un--profile::after {
   position: absolute;
-  content: url("/img/user-nav__icon-logout.svg");
+  content: url("../img/user-nav__icon-logout.svg");
   top: 14px;
   right: 17px;
 }
 
 .btn-un--profile:hover::after, .btn-un--profile:focus::after {
-  content: url("/img/user-nav__icon-logout--hover.svg");
+  content: url("../img/user-nav__icon-logout--hover.svg");
 }
 
 .btn-un--profile:active::after {
-  content: url("/img/user-nav__icon-logout.svg");
+  content: url("../img/user-nav__icon-logout.svg");
 }
 
 .site-nav {
@@ -554,33 +554,33 @@ input[type="radio"].visually-hidden {
 
 .promo-cart--new::after {
   position: absolute;
-  content: url("/img/common__flag-new.svg");
+  content: url("../img/common__flag-new.svg");
   right: 0;
   top: 0;
 }
 
 .promo-cart--materials {
-  background: #ffbf47 url("/img/promo-cart--materials.svg") no-repeat;
+  background: #ffbf47 url("../img/promo-cart--materials.svg") no-repeat;
   background-position: 213px 31px;
 }
 
 .promo-cart--instrument {
-  background: #3bbce3 url("/img/promo-cart--instrument.svg") no-repeat;
+  background: #3bbce3 url("../img/promo-cart--instrument.svg") no-repeat;
   background-position: 194px 34px;
 }
 
 .promo-cart--technics {
-  background: #dc91d8 url("/img/promo-cart--technics.svg") no-repeat;
+  background: #dc91d8 url("../img/promo-cart--technics.svg") no-repeat;
   background-position: 191px 31px;
 }
 
 .promo-cart--discount {
-  background: #8ed78f url("/img/promo-cart--discount.svg") no-repeat;
+  background: #8ed78f url("../img/promo-cart--discount.svg") no-repeat;
   background-position: 196px 26px;
 }
 
 .promo-cart--delivery {
-  background: #ffc047 url("/img/promo-cart--delivery.svg") no-repeat;
+  background: #ffc047 url("../img/promo-cart--delivery.svg") no-repeat;
   background-position: 191px 32px;
 }
 
@@ -647,12 +647,12 @@ input[type="radio"].visually-hidden {
 
 .promo-sliders__btn-prev {
   left: 15px;
-  background-image: url("/img/promo-sliders__icon-left.svg");
+  background-image: url("../img/promo-sliders__icon-left.svg");
 }
 
 .promo-sliders__btn-next {
   right: 11px;
-  background-image: url("/img/promo-sliders__icon-right.svg");
+  background-image: url("../img/promo-sliders__icon-right.svg");
 }
 
 .promo-sliders__knobs {
@@ -714,11 +714,11 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider--drills {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 105px, rgba(255, 255, 255, 0) 105px), url("/img/features__drills.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 105px, rgba(255, 255, 255, 0) 105px), url("../img/features__drills.jpg");
 }
 
 .promo-slider--perforators {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 105px, rgba(255, 255, 255, 0) 105px), url("/img/features__perforators.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 105px, rgba(255, 255, 255, 0) 105px), url("../img/features__perforators.jpg");
 }
 
 .promo-slider--hidden {

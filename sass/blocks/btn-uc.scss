@@ -35,7 +35,7 @@
 
   &--bookmark::before {
     position: absolute;
-    content: url("/img/user-controls__icon-bookmark.svg");
+    content: url("../img/user-controls__icon-bookmark.svg");
     top: 12px;
     left: 20px;
 
@@ -44,7 +44,7 @@
 
   &--basket::before {
     position: absolute;
-    content: url("/img/user-controls__icon-basket.svg");
+    content: url("../img/user-controls__icon-basket.svg");
     top: 11px;
     left: 26px;
 
