@@ -1,0 +1,38 @@
+.about {
+  width: 460px;
+
+  font-family: $cuprum;
+  font-weight: 400;
+}
+
+.about__transport-companies {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+
+  list-style: none;
+}
+
+.about__transport-company {
+  position: relative;
+
+  padding-left: 37px;
+  padding-bottom: 16px;
+
+  font-size: 18px;
+  line-height: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 0;
+
+    width: 25px;
+    border-top: 2px solid #ee3643;
+  }
+}
+
+.about__btn-details {
+  min-width: 220px;
+}

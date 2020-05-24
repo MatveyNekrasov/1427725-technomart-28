@@ -1,5 +1,6 @@
 .header {
-  color: #000;
+  font-family: $cuprum;
+  font-weight: 400;
 
   background-color: #f3f7f8;
 }
@@ -15,10 +16,8 @@
   padding: 45px 30px 44px 30px;
 
   color: #ee3643;
-  font-family: $cuprum;
   font-style: italic;
   font-size: 16px;
-  font-weight: 400;
   line-height: 23px;
 }
 
@@ -32,16 +31,15 @@
   position: relative;
 
   display: block;
-  border: 3px solid #FFF;
+  border: 3px solid #ffffff;
   margin-bottom: 3px;
   padding-left: 30px;
   box-sizing: border-box;
 
-  color: #EE3643;
-  font-family: $cuprum;
-  font-weight: bold;
+  color: #ee3643;
   font-size: 21px;
   line-height: 39px;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
 
@@ -54,10 +52,8 @@
 }
 
 .header__address {
-  color: #32425C;
-  font-family: $cuprum;
+  color: #32425c;
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   text-align: center;

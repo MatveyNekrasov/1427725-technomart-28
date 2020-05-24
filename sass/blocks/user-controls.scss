@@ -1,6 +1,4 @@
 .user-controls {
-  color: #fff;
-
   background-color: #293449;
 }
 
@@ -20,6 +18,11 @@
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 
+  &:hover,
+  &:focus {
+    background-color: #ca2c37;
+  }
+
   &:active {
     background-color: #ba2732;
   }
@@ -29,20 +32,21 @@
   display: flex;
   flex-grow: 1;
 
-  &:hover g,
-  &:focus g {
-    opacity: 1;
+  &:hover,
+  &:focus {
+    background-color: #212a3a;
+  }
+
+  &:hover .user-controls__search-btn,
+  &:focus .user-controls__search-btn {
+    color: rgba(255, 255, 255, 1.0);
   }
 
   &:focus-within {
     background-color: #ffffff;
 
-    & path {
-      fill: #ee3643;
-    }
-
-    & g {
-      opacity: 1;
+    &>.user-controls__search-btn {
+      color: #ee3643;
     }
 
     &>.user-controls__search-input {
@@ -56,6 +60,8 @@
   margin-left: 10px;
   margin-right: 2px;
   padding-top: 4px;
+
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: inherit;
   border: none;

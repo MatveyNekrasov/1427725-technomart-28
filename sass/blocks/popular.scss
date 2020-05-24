@@ -1,0 +1,22 @@
+.popular {
+  padding-bottom: 50px;
+}
+
+.popular__title {
+  margin-bottom: 19px;
+}
+
+.popular__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: -20px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popular__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
