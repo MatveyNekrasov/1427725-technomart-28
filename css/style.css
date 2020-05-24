@@ -396,9 +396,10 @@ input[type="radio"].visually-hidden {
   margin-right: 60px;
   padding: 45px 30px 44px 30px;
   color: #ee3643;
-  font-style: italic;
   font-size: 16px;
   line-height: 23px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .header__container-phone-address {
