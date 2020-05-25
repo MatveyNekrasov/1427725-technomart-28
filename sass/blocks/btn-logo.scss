@@ -9,12 +9,12 @@
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 
-  &:hover,
-  &:focus {
+  &:hover:not(&--active),
+  &:focus:not(&--active) {
     background-color: #ca2c37;
   }
 
-  &:active {
+  &:active:not(&--active) {
     background-color: #ba2732;
   }
 }

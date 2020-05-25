@@ -202,11 +202,11 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
-.btn-logo:hover, .btn-logo:focus {
+.btn-logo:hover:not(.btn-logo--active), .btn-logo:focus:not(.btn-logo--active) {
   background-color: #ca2c37;
 }
 
-.btn-logo:active {
+.btn-logo:active:not(.btn-logo--active) {
   background-color: #ba2732;
 }
 
