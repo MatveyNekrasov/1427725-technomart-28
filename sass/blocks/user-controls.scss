@@ -8,24 +8,7 @@
 }
 
 .user-controls__logo {
-  padding: 12px 0;
   margin-bottom: -5px;
-  min-width: 220px;
-
-  text-align: center;
-  color: #fff;
-
-  background-color: #ee3643;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-
-  &:hover,
-  &:focus {
-    background-color: #ca2c37;
-  }
-
-  &:active {
-    background-color: #ba2732;
-  }
 }
 
 .user-controls__search-form {
