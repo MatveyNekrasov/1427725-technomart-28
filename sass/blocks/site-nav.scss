@@ -33,12 +33,12 @@
   line-height: 24px;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  &:hover:not(&--active),
+  &:focus:not(&--active) {
     background-color: #293449;
   }
 
-  &:active {
+  &:active:not(&--active) {
     color: rgba(255, 255, 255, 0.5);
     background-color: #1D2739;
   }

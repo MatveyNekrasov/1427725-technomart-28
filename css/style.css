@@ -598,11 +598,11 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-.site-nav__link:hover, .site-nav__link:focus {
+.site-nav__link:hover:not(.site-nav__link--active), .site-nav__link:focus:not(.site-nav__link--active) {
   background-color: #293449;
 }
 
-.site-nav__link:active {
+.site-nav__link:active:not(.site-nav__link--active) {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1D2739;
 }
