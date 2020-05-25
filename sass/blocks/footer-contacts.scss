@@ -1,4 +1,7 @@
 .footer-contacts {
+  padding-top: 36px;
+  padding-bottom: 29px;
+
   color: #ffffff;
   font-family: $cuprum;
   font-weight: 400;
@@ -6,6 +9,51 @@
   background-color: #293449;
 }
 
+.footer-contacts__container {
+  display: flex;
+}
+
 .footer-contacts__copyright {
   margin: 0;
+  margin-right: 90px;
+  width: 300px;
+
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-contacts__socials {
+  width: 132px;
+  margin: 0;
+  margin-right: 119px;
+  margin-top: -1px;
+}
+
+
+.footer-contacts__email {
+  width: 150px;
+  margin: 0;
+  margin-right: auto;
+}
+
+.footer-contacts__developed {
+  width: 111px;
+  margin: 0;
+}
+
+.footer-contacts__link {
+  display: block;
+
+  color: #ffd180;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: #ee3643;
+    text-decoration: none;
+  }
 }
