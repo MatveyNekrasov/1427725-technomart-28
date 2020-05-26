@@ -26,14 +26,14 @@
   }
 
   &:focus-within {
-    background-color: #ffffff;
+    background-color: var(--color-02);
 
     &>.user-controls__search-btn {
       color: #ee3643;
     }
 
     &>.user-controls__search-input {
-      color: #000;
+      color: var(--color-01);
     }
   }
 }
@@ -53,17 +53,15 @@
 .user-controls__search-input {
   flex-grow: 1;
 
-  font-family: $cuprum;
-  color: #ffffff;
+  color: var(--color-02);
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
 
   background-color: inherit;
   border: none;
 
   &::placeholder {
-    color: #ffffff;
+    color: var(--color-02);
   }
 }
 

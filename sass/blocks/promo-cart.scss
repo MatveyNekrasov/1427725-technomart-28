@@ -8,7 +8,7 @@
   width: 300px;
   box-sizing: border-box;
 
-  color: #ffffff;
+  color: var(--color-02);
 
   background-color: #32425c;
 
@@ -50,10 +50,8 @@
   padding: 0;
   padding-bottom: 13px;
 
-  color: #ffffff;
-  font-family: $cuprum;
-  font-style: normal;
-  font-weight: bold;
+  color: var(--color-02);
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -64,10 +62,7 @@
   padding: 10px 0;
   max-width: 135px;
 
-  color: #ffffff;
-  font-family: $cuprum;
-  font-style: normal;
-  font-weight: normal;
+  color: var(--color-02);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;

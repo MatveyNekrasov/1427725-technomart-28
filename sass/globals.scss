@@ -1,0 +1,24 @@
+:root {
+  --color-01: #000000;
+  --color-02: #ffffff;
+}
+
+$cuprum: "Cuprum", "Tahoma", sans-serif;
+$ptsans: "PT Sans", "Arial", sans-serif;
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+
+  color: var(--color-01);
+  font-family: $cuprum;
+  font-weight: 400;
+
+  background-color: var(--color-02);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

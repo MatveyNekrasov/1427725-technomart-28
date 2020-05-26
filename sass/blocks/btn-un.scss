@@ -6,16 +6,13 @@
   padding: 12px 10px;
   box-sizing: border-box;
 
-  color: #000;
-  font-family: $cuprum;
+  color: var(--color-01);
   text-decoration: none;
   text-align: center;
-  font-style: normal;
-  font-weight: normal;
   font-size: 21px;
   line-height: 21px;
 
-  background-color: #fff;
+  background-color: var(--color-02);
 
   &:hover,
   &:focus {
@@ -58,7 +55,7 @@
 
     &:hover,
     &:focus {
-      color: #000;
+      color: var(--color-01);
     }
 
     &:active {

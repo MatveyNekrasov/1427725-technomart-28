@@ -3,11 +3,9 @@
   padding: 10px;
   box-sizing: border-box;
 
-  color: #ffffff;
-  font-family: $cuprum;
+  color: var(--color-02);
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -116,7 +114,7 @@
 
   &:hover,
   &:focus {
-    color: #ffffff;
+    color: var(--color-02);
     background-color: #293449;
   }
 
@@ -127,13 +125,13 @@
 
   &--active {
     color: #32425c;
-    background-color: #ffffff;
+    background-color: var(--color-02);
     box-shadow: none;
 
     &:hover,
     &:focus {
       color: #32425c;
-      background-color: #ffffff;
+      background-color: var(--color-02);
     }
   }
 }

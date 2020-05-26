@@ -8,7 +8,7 @@
 
   text-align: center;
 
-  background-color: #ffffff;
+  background-color: var(--color-02);
 
   &--new::before {
     position: absolute;
@@ -59,7 +59,7 @@
   padding: 0 30px;
   padding-bottom: 7px;
 
-  color: #000000;
+  color: var(--color-01);
   font-family: $ptsans;
   font-size: 18px;
   font-weight: 700;

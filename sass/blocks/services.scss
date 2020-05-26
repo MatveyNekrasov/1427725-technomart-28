@@ -1,9 +1,6 @@
 .services {
   padding-top: 65px;
 
-  font-family: $cuprum;
-  font-weight: 400;
-
   overflow: hidden;
   background-color: #f3f7f8;
 }
@@ -108,7 +105,7 @@
   margin: 0;
   padding-bottom: 20px;
 
-  color: #000000;
+  color: var(--color-01);
   font-family: $ptsans;
   font-size: 13px;
   line-height: 25px;

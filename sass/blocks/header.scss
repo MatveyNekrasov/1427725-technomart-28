@@ -1,7 +1,4 @@
 .header {
-  font-family: $cuprum;
-  font-weight: 400;
-
   background-color: #f3f7f8;
 }
 
@@ -32,7 +29,7 @@
   position: relative;
 
   display: block;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--color-02);
   margin-bottom: 3px;
   padding-left: 30px;
   box-sizing: border-box;

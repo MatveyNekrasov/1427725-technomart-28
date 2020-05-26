@@ -38,13 +38,24 @@
   src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff") format("woff");
 }
 
-.body {
+:root {
+  --color-01: #000000;
+  --color-02: #ffffff;
+}
+
+body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
+  color: var(--color-01);
   font-family: "Cuprum", "Tahoma", sans-serif;
-  color: #000000;
-  background-color: #ffffff;
+  font-weight: 400;
+  background-color: var(--color-02);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -73,11 +84,9 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding: 10px;
   box-sizing: border-box;
-  color: #ffffff;
-  font-family: "Cuprum", "Tahoma", sans-serif;
+  color: var(--color-02);
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -172,7 +181,7 @@ input[type="radio"].visually-hidden {
 }
 
 .btn--services:hover, .btn--services:focus {
-  color: #ffffff;
+  color: var(--color-02);
   background-color: #293449;
 }
 
@@ -183,21 +192,22 @@ input[type="radio"].visually-hidden {
 
 .btn--services--active {
   color: #32425c;
-  background-color: #ffffff;
+  background-color: var(--color-02);
   box-shadow: none;
 }
 
 .btn--services--active:hover, .btn--services--active:focus {
   color: #32425c;
-  background-color: #ffffff;
+  background-color: var(--color-02);
 }
 
 .btn-logo {
   display: inline-block;
-  padding: 12px 0;
+  padding-top: 12px;
+  padding-bottom: 13px;
   min-width: 220px;
   text-align: center;
-  color: #fff;
+  color: var(--color-02);
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
@@ -238,7 +248,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-controls__search-form:focus-within {
-  background-color: #ffffff;
+  background-color: var(--color-02);
 }
 
 .user-controls__search-form:focus-within > .user-controls__search-btn {
@@ -246,7 +256,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-controls__search-form:focus-within > .user-controls__search-input {
-  color: #000;
+  color: var(--color-01);
 }
 
 .user-controls__search-btn {
@@ -261,33 +271,31 @@ input[type="radio"].visually-hidden {
 
 .user-controls__search-input {
   flex-grow: 1;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  color: #ffffff;
+  color: var(--color-02);
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
   background-color: inherit;
   border: none;
 }
 
 .user-controls__search-input::-webkit-input-placeholder {
-  color: #ffffff;
+  color: var(--color-02);
 }
 
 .user-controls__search-input::-moz-placeholder {
-  color: #ffffff;
+  color: var(--color-02);
 }
 
 .user-controls__search-input:-ms-input-placeholder {
-  color: #ffffff;
+  color: var(--color-02);
 }
 
 .user-controls__search-input::-ms-input-placeholder {
-  color: #ffffff;
+  color: var(--color-02);
 }
 
 .user-controls__search-input::placeholder {
-  color: #ffffff;
+  color: var(--color-02);
 }
 
 .user-controls__bookmarks {
@@ -299,12 +307,10 @@ input[type="radio"].visually-hidden {
   min-width: 150px;
   padding: 9px 0;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--color-02);
   text-decoration: none;
   text-align: center;
-  font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
 }
 
@@ -371,7 +377,6 @@ input[type="radio"].visually-hidden {
 .title-bar__title {
   margin: 0;
   color: #32425c;
-  font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -385,8 +390,6 @@ input[type="radio"].visually-hidden {
 }
 
 .header {
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-weight: 400;
   background-color: #f3f7f8;
 }
 
@@ -415,7 +418,7 @@ input[type="radio"].visually-hidden {
 .header__phone {
   position: relative;
   display: block;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--color-02);
   margin-bottom: 3px;
   padding-left: 30px;
   box-sizing: border-box;
@@ -479,15 +482,12 @@ input[type="radio"].visually-hidden {
   min-height: 45px;
   padding: 12px 10px;
   box-sizing: border-box;
-  color: #000;
-  font-family: "Cuprum", "Tahoma", sans-serif;
+  color: var(--color-01);
   text-decoration: none;
   text-align: center;
-  font-style: normal;
-  font-weight: normal;
   font-size: 21px;
   line-height: 21px;
-  background-color: #fff;
+  background-color: var(--color-02);
 }
 
 .btn-un:hover, .btn-un:focus {
@@ -528,7 +528,7 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-un--profile:hover, .btn-un--profile:focus {
-  color: #000;
+  color: var(--color-01);
 }
 
 .btn-un--profile:active {
@@ -589,10 +589,7 @@ input[type="radio"].visually-hidden {
   display: block;
   padding-top: 17px;
   padding-bottom: 19px;
-  color: #ffffff;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  color: var(--color-02);
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
@@ -613,9 +610,6 @@ input[type="radio"].visually-hidden {
   padding: 7px 0;
   box-sizing: border-box;
   color: #32425C;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
@@ -689,7 +683,7 @@ input[type="radio"].visually-hidden {
   padding-right: 21px;
   width: 300px;
   box-sizing: border-box;
-  color: #ffffff;
+  color: var(--color-02);
   background-color: #32425c;
 }
 
@@ -729,10 +723,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-bottom: 13px;
-  color: #ffffff;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  color: var(--color-02);
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -742,10 +734,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   padding: 10px 0;
   max-width: 135px;
-  color: #ffffff;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  color: var(--color-02);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -821,7 +810,7 @@ input[type="radio"].visually-hidden {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--color-02);
 }
 
 .promo-sliders__input:checked + .promo-sliders__knob::after {
@@ -849,7 +838,7 @@ input[type="radio"].visually-hidden {
   padding-right: 23px;
   width: 300px;
   box-sizing: border-box;
-  color: #ffffff;
+  color: var(--color-02);
   background-color: #32425c;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 105px, rgba(255, 255, 255, 0) 105px);
 }
@@ -870,8 +859,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-bottom: 6px;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-style: normal;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -882,11 +869,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-bottom: 112px;
-  color: #ffffff;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-style: normal;
+  color: var(--color-02);
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
 }
 
@@ -923,7 +907,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #eaeaea;
   padding-bottom: 20px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--color-02);
 }
 
 .product--new::before {
@@ -973,7 +957,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0 30px;
   padding-bottom: 7px;
-  color: #000000;
+  color: var(--color-01);
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -1041,8 +1025,6 @@ input[type="radio"].visually-hidden {
 
 .services {
   padding-top: 65px;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-weight: 400;
   overflow: hidden;
   background-color: #f3f7f8;
 }
@@ -1138,7 +1120,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin: 0;
   padding-bottom: 20px;
-  color: #000000;
+  color: var(--color-01);
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 25px;
@@ -1151,8 +1133,6 @@ input[type="radio"].visually-hidden {
 
 .about {
   width: 460px;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-weight: 400;
 }
 
 .about__transport-companies {
@@ -1188,8 +1168,6 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   padding-top: 71px;
   padding-bottom: 70px;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-weight: 400;
 }
 
 .about-contacts__title {
@@ -1224,9 +1202,7 @@ input[type="radio"].visually-hidden {
 
 .footer-nav {
   padding-bottom: 54px;
-  color: #ffffff;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-weight: 400;
+  color: var(--color-02);
   font-size: 18px;
   line-height: 24px;
   background-color: #32425C;
@@ -1338,9 +1314,7 @@ input[type="radio"].visually-hidden {
 .footer-contacts {
   padding-top: 36px;
   padding-bottom: 29px;
-  color: #ffffff;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-  font-weight: 400;
+  color: var(--color-02);
   background-color: #293449;
 }
 
