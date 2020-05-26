@@ -3,23 +3,23 @@
   padding: 10px;
   box-sizing: border-box;
 
-  color: var(--color-02);
+  color: var(--color-white-01);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
 
-  background-color: #ee3643;
+  background-color: var(--color-red-01);
   border: none;
 
   &:hover,
   &:focus {
-    background-color: #ca2c37;
+    background-color: var(--color-red-02);
   }
 
   &:active {
-    background-color: #ba2732;
+    background-color: var(--color-red-03);
   }
 }
 
@@ -27,16 +27,16 @@
   display: block;
   padding: 7px;
   width: 135px;
-  border: 3px solid #63A63E;
+  border: 3px solid var(--color-green-02);
   border-radius: 2px;
 
-  color: #32425C;
+  color: var(--color-blue-03);
 
   background-color: transparent;
 
   &:hover,
   &:focus {
-    border: 3px solid #32425c;
+    border: 3px solid var(--color-blue-03);
     background-color: transparent;
   }
 
@@ -55,16 +55,16 @@
   width: 135px;
   border-radius: 2px;
 
-  box-shadow: inset 0px -3px 0px #367315;
-  background-color: #63A63E;
+  box-shadow: inset 0px -3px 0px var(--color-green-05);
+  background-color: var(--color-green-02);
 
   &:hover,
   &:focus {
-    background-color: #5fbb2d;
+    background-color: var(--color-green-03);
   }
 
   &:active {
-    background-color: #518534;
+    background-color: var(--color-green-04);
     box-shadow: none;
   }
 
@@ -109,29 +109,29 @@
   text-transform: none;
   text-align: start;
 
-  background-color: #32425c;
-  box-shadow: inset 0 1px 0 #293449, inset 0 2px 0 #405069;
+  background-color: var(--color-blue-03);
+  box-shadow: inset 0 1px 0 var(--color-blue-04), inset 0 2px 0 var(--color-blue-02);
 
   &:hover,
   &:focus {
-    color: var(--color-02);
-    background-color: #293449;
+    color: var(--color-white-01);
+    background-color: var(--color-blue-04);
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #1d2739;
+    color: var(--color-white-a-02);
+    background-color: var(--color-blue-06);
   }
 
   &--active {
-    color: #32425c;
-    background-color: var(--color-02);
+    color: var(--color-blue-03);
+    background-color: var(--color-white-01);
     box-shadow: none;
 
     &:hover,
     &:focus {
-      color: #32425c;
-      background-color: var(--color-02);
+      color: var(--color-blue-03);
+      background-color: var(--color-white-01);
     }
   }
 }

@@ -1,11 +1,11 @@
 .footer-nav {
   padding-bottom: 54px;
 
-  color: var(--color-02);
+  color: var(--color-white-01);
   font-size: 18px;
   line-height: 24px;
 
-  background-color: #32425C;
+  background-color: var(--color-blue-03);
 }
 
 .footer-nav__container {
@@ -57,7 +57,7 @@
   display: block;
   padding: 6px 0;
 
-  color: #F1F5F7;
+  color: var(--color-white-04);
   text-decoration: none;
 
   &:hover,
@@ -72,5 +72,5 @@
 }
 
 .footer-nav__lnk--store {
-  color: #ffd180;
+  color: var(--color-yellow-01);
 }

@@ -8,21 +8,21 @@
   width: 300px;
   box-sizing: border-box;
 
-  color: var(--color-02);
+  color: var(--color-white-01);
 
-  background-color: #32425c;
+  background-color: var(--color-blue-03);
   background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 105px, rgba(255, 255, 255, 0) 105px);
+    linear-gradient(to bottom, var(--color-black-a-01) 105px, var(--color-black-a-03) 105px);
 
   &--drills {
     background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 105px, rgba(255, 255, 255, 0) 105px),
+      linear-gradient(to bottom, var(--color-black-a-01) 105px, var(--color-black-a-03) 105px),
       url("../img/features__drills.jpg");
   }
 
   &--perforators {
     background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 105px, rgba(255, 255, 255, 0) 105px),
+      linear-gradient(to bottom, var(--color-black-a-01) 105px, var(--color-black-a-03) 105px),
       url("../img/features__perforators.jpg");
   }
 
@@ -47,7 +47,7 @@
   padding: 0;
   padding-bottom: 112px;
 
-  color: var(--color-02);
+  color: var(--color-white-01);
   font-size: 18px;
   line-height: 24px;
 }

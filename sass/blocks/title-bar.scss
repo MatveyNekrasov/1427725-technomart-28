@@ -7,13 +7,13 @@
   padding-left: 28px;
   padding-right: 14px;
 
-  background-color: #f9f5f0;
+  background-color: var(--color-white-02);
 }
 
 .title-bar__title {
   margin: 0;
 
-  color: #32425c;
+  color: var(--color-blue-03);
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;

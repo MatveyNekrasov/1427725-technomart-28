@@ -1,5 +1,5 @@
 .user-controls {
-  background-color: #293449;
+  background-color: var(--color-blue-04);
 }
 
 .user-controls__container {
@@ -17,23 +17,23 @@
 
   &:hover,
   &:focus {
-    background-color: #212a3a;
+    background-color: var(--color-blue-05);
   }
 
   &:hover .user-controls__search-btn,
   &:focus .user-controls__search-btn {
-    color: rgba(255, 255, 255, 1.0);
+    color: var(--color-white-a-01);
   }
 
   &:focus-within {
-    background-color: var(--color-02);
+    background-color: var(--color-white-01);
 
     &>.user-controls__search-btn {
-      color: #ee3643;
+      color: var(--color-red-01);
     }
 
     &>.user-controls__search-input {
-      color: var(--color-01);
+      color: var(--color-black-01);
     }
   }
 }
@@ -44,7 +44,7 @@
   margin-right: 2px;
   padding-top: 4px;
 
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-white-a-03);
 
   background-color: inherit;
   border: none;
@@ -53,7 +53,7 @@
 .user-controls__search-input {
   flex-grow: 1;
 
-  color: var(--color-02);
+  color: var(--color-white-01);
   font-size: 18px;
   line-height: 24px;
 
@@ -61,7 +61,7 @@
   border: none;
 
   &::placeholder {
-    color: var(--color-02);
+    color: var(--color-white-01);
   }
 }
 

@@ -5,17 +5,17 @@
   min-width: 220px;
 
   text-align: center;
-  color: var(--color-02);
+  color: var(--color-white-01);
 
-  background-color: #ee3643;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  background-color: var(--color-red-01);
+  box-shadow: inset 0px -5px 0px var(--color-black-a-01);
 
   &:hover:not(&--active),
   &:focus:not(&--active) {
-    background-color: #ca2c37;
+    background-color: var(--color-red-02);
   }
 
   &:active:not(&--active) {
-    background-color: #ba2732;
+    background-color: var(--color-red-03);
   }
 }

@@ -17,14 +17,14 @@
 
   color: white;
 
-  background-color: #212a3a;
+  background-color: var(--color-blue-05);
   background-repeat: no-repeat;
   text-decoration: none;
 
   &:hover,
   &:focus,
   &:active {
-    background-color: #ee3643;
+    background-color: var(--color-red-01);
   }
 
   &--vkontakte {

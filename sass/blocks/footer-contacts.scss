@@ -2,9 +2,9 @@
   padding-top: 36px;
   padding-bottom: 29px;
 
-  color: var(--color-02);
+  color: var(--color-white-01);
 
-  background-color: #293449;
+  background-color: var(--color-blue-04);
 }
 
 .footer-contacts__container {
@@ -42,7 +42,7 @@
 .footer-contacts__link {
   display: block;
 
-  color: #ffd180;
+  color: var(--color-yellow-01);
   text-decoration: none;
 
   &:hover,
@@ -51,7 +51,7 @@
   }
 
   &:active {
-    color: #ee3643;
+    color: var(--color-red-01);
     text-decoration: none;
   }
 }

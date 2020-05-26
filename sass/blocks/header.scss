@@ -1,5 +1,5 @@
 .header {
-  background-color: #f3f7f8;
+  background-color: var(--color-white-03);
 }
 
 .header__container {
@@ -12,7 +12,7 @@
   margin-right: 60px;
   padding: 45px 30px 44px 30px;
 
-  color: #ee3643;
+  color: var(--color-red-01);
   font-size: 16px;
   line-height: 23px;
   font-weight: 400;
@@ -29,12 +29,12 @@
   position: relative;
 
   display: block;
-  border: 3px solid var(--color-02);
+  border: 3px solid var(--color-white-01);
   margin-bottom: 3px;
   padding-left: 30px;
   box-sizing: border-box;
 
-  color: #ee3643;
+  color: var(--color-red-01);
   font-size: 21px;
   line-height: 39px;
   font-weight: 700;
@@ -50,7 +50,7 @@
 }
 
 .header__address {
-  color: #32425c;
+  color: var(--color-blue-03);
   font-style: normal;
   font-size: 14px;
   line-height: 24px;

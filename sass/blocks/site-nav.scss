@@ -9,8 +9,8 @@
   padding-left: 24px;
   padding-right: 19px;
 
-  background-color: #32425c;
-  box-shadow: inset 0px -5px 0px #293449;
+  background-color: var(--color-blue-03);
+  box-shadow: inset 0px -5px 0px var(--color-blue-04);
   list-style: none;
 }
 
@@ -25,18 +25,18 @@
   padding-top: 17px;
   padding-bottom: 19px;
 
-  color: var(--color-02);
+  color: var(--color-white-01);
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
 
   &:hover:not(&--active),
   &:focus:not(&--active) {
-    background-color: #293449;
+    background-color: var(--color-blue-04);
   }
 
   &:active:not(&--active) {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #1D2739;
+    color: var(--color-white-a-02);
+    background-color: var(--color-blue-06);
   }
 }

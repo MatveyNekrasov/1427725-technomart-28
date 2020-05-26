@@ -6,21 +6,21 @@
   padding: 12px 10px;
   box-sizing: border-box;
 
-  color: var(--color-01);
+  color: var(--color-black-01);
   text-decoration: none;
   text-align: center;
   font-size: 21px;
   line-height: 21px;
 
-  background-color: var(--color-02);
+  background-color: var(--color-white-01);
 
   &:hover,
   &:focus {
-    color: #EE3643;
+    color: var(--color-red-01);
   }
 
   &:active {
-    color: #C5C5C5;
+    color: var(--color-white-05);
   }
 
   &--login {
@@ -55,11 +55,11 @@
 
     &:hover,
     &:focus {
-      color: var(--color-01);
+      color: var(--color-black-01);
     }
 
     &:active {
-      color: #C5C5C5;
+      color: var(--color-white-05);
     }
 
     &::before {

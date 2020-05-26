@@ -2,7 +2,7 @@
   padding-top: 65px;
 
   overflow: hidden;
-  background-color: #f3f7f8;
+  background-color: var(--color-white-03);
 }
 
 .services__title {
@@ -92,7 +92,7 @@
   margin-top: -2px;
   padding-bottom: 27px;
 
-  color: #32425c;
+  color: var(--color-blue-03);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -105,7 +105,7 @@
   margin: 0;
   padding-bottom: 20px;
 
-  color: var(--color-01);
+  color: var(--color-black-01);
   font-family: $ptsans;
   font-size: 13px;
   line-height: 25px;

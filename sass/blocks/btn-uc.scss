@@ -5,7 +5,7 @@
   padding: 9px 0;
   box-sizing: border-box;
 
-  color: var(--color-02);
+  color: var(--color-white-01);
   text-decoration: none;
   text-align: center;
   font-size: 18px;
@@ -13,12 +13,12 @@
 
   &:hover,
   &:focus {
-    background-color: #212a3a;
+    background-color: var(--color-blue-05);
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #161D29;
+    color: var(--color-white-a-02);
+    background-color: var(--color-blue-07);
   }
 
   &--with-icon {
@@ -27,29 +27,29 @@
     &:hover,
     &:focus {
       .btn-uc__icon {
-        color: rgba(255, 255, 255, 1.0);
+        color: var(--color-white-a-01);
       }
     }
 
     &:active {
       .btn-uc__icon {
-        color: rgba(255, 255, 255, 0.3);
+        color: var(--color-white-a-03);
       }
     }
   }
 
   &--buy {
-    background-color: #63A63E;
+    background-color: var(--color-green-02);
 
     &:hover,
     &:focus {
-      background-color: #5FBB2D;
+      background-color: var(--color-green-03);
     }
 
     &:active {
-      color: rgba(255, 255, 255, 0.5);
+      color: var(--color-white-a-02);
 
-      background-color: #63A63E;
+      background-color: var(--color-green-02);
     }
   }
 
@@ -58,7 +58,7 @@
 .btn-uc__icon {
   position: absolute;
 
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-white-a-03);
 }
 
 .btn-uc__icon--bookmark {
