@@ -1,6 +1,35 @@
 .modal-writeus {
   width: 620px;
-  min-height: 282px;
+  min-height: 430px;
   margin-left: -310px;
-  margin-top: -141px;
+  margin-top: -215px;
+}
+
+.modal-writeus__wrapper {
+  padding: 42px 80px 37px;
+}
+
+.modal-writeus__name-email {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.modal-writeus__label {
+  font-size: 18px;
+  line-height: 18px; // ???
+}
+
+.modal-writeus__label-text {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.modal-writeus__input {
+  width: 220px;
+}
+
+.modal-writeus__submit {
+  width: 460px;
 }

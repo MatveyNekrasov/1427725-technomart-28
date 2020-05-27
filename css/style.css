@@ -1439,6 +1439,14 @@ input[type="radio"].visually-hidden {
   background: url("../img/modal__icon-close.svg") no-repeat center;
 }
 
+.modal-window__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 37px 20px;
+  background-color: var(--color-white-07);
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1461,11 +1469,56 @@ input[type="radio"].visually-hidden {
   line-height: 0;
 }
 
+.writeus-input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid var(--color-white-05);
+  border-radius: 2px;
+  padding: 9px 11px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.writeus-input--textarea {
+  min-height: 114px;
+  resize: none;
+}
+
 .modal-writeus {
   width: 620px;
-  min-height: 282px;
+  min-height: 430px;
   margin-left: -310px;
-  margin-top: -141px;
+  margin-top: -215px;
+}
+
+.modal-writeus__wrapper {
+  padding: 42px 80px 37px;
+}
+
+.modal-writeus__name-email {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.modal-writeus__label {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.modal-writeus__label-text {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.modal-writeus__input {
+  width: 220px;
+}
+
+.modal-writeus__submit {
+  width: 460px;
 }
 
 .modal-basket {
@@ -1486,14 +1539,6 @@ input[type="radio"].visually-hidden {
   top: -20px;
   left: 81px;
   content: url("../img/modal-basket__icon-mark.svg");
-}
-
-.modal-basket__buttons {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 37px 20px;
-  background-color: var(--color-white-07);
 }
 
 .modal-basket__checkout {

@@ -1,0 +1,16 @@
+.writeus-input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid var(--color-white-05);
+  border-radius: 2px;
+  padding: 9px 11px;
+
+  font-size: 14px;
+  line-height: 14px; // ???
+
+  &--textarea {
+    min-height: 114px;
+    resize: none;
+  }
+}

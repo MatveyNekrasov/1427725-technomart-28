@@ -28,3 +28,12 @@
 
   background: url("../img/modal__icon-close.svg") no-repeat center;
 }
+
+.modal-window__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 37px 20px;
+
+  background-color: var(--color-white-07);
+}

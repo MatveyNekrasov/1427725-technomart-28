@@ -446,9 +446,9 @@
   </footer>
 
   <div class="modal-overlay">
-    <section class="modal-basket modal-window modal-window--visible">
+    <section class="modal-basket modal-window">
       <h2 class="modal-basket__title">Товар добавлен в корзину!</h2>
-      <p class="modal-basket__buttons">
+      <p class="modal-window__buttons">
         <button class="modal-basket__checkout btn" type="button">Оформить заказ</button>
         <button class="modal-basket__continue btn btn--light" type="button">Продолжить покупки</button>
       </p>
@@ -464,22 +464,27 @@
     <section class="modal-writeus modal-window">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal-writeus__name-email">
+        <div class="modal-writeus__wrapper">
+          <p class="modal-writeus__name-email">
+            <label class="modal-writeus__label">
+              <span class="modal-writeus__label-text">Ваше имя:</span>
+              <input class="modal-writeus__input writeus-input" type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+            <label class="modal-writeus__label">
+              <span class="modal-writeus__label-text">Ваш e-mail:</span>
+              <input class="modal-writeus__input writeus-input" type="email" name="email"
+                placeholder="email@example.com">
+            </label>
+          </p>
           <label class="modal-writeus__label">
-            Ваше имя:
-            <input class="writeus-input" type="text" name="name" placeholder="Имя Фамилия">
-          </label>
-          <label class="modal-writeus__label">
-            Ваш e-mail:
-            <input class="writeus-input" type="email" name="email" placeholder="email@example.com">
+            <span class="modal-writeus__label-text">Текст письма:</span>
+            <textarea class="modal-writeus__textarea writeus-input writeus-input--textarea" name="textarea"
+              placeholder="В свободной форме"></textarea>
           </label>
         </div>
-        <label class="modal-writeus__label">
-          Текст письма:
-          <textarea class="writeus-input writeus-input-textarea" name="textarea"
-            placeholder="В свободной форме"></textarea>
-        </label>
-        <button class="btn" type="submit">Отправить</button>
+        <p class="modal-window__buttons">
+          <button class="modal-writeus__submit btn" type="submit">Отправить</button>
+        </p>
       </form>
       <button class="modal-window__close" type="button" aria-label="Закрыть окно"></button>
     </section>
