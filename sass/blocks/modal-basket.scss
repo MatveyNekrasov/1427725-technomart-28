@@ -1,3 +1,39 @@
 .modal-basket {
-  display: none;
+  width: 620px;
+  min-height: 282px;
+  margin-left: -310px;
+  margin-top: -141px;
+}
+
+.modal-basket__title {
+  position: relative;
+
+  margin: 68px 0;
+
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    top: -20px;
+    left: 81px;
+    content: url("../img/modal-basket__icon-mark.svg");
+  }
+}
+
+.modal-basket__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 37px 20px;
+
+  background-color: var(--color-white-07);
+}
+
+.modal-basket__checkout {
+  width: 192px;
+  margin-right: 8px;
+}
+
+.modal-basket__continue {
+  width: 192px;
 }

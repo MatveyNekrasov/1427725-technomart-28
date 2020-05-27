@@ -1,15 +1,17 @@
 :root {
   --color-black-01: #000000;
-  --color-black-a-01: rgba(0, 0, 0, 0.25);
+  --color-black-a-01: rgba(0, 0, 0, 0);
   --color-black-a-02: rgba(0, 0, 0, 0.15);
-  --color-black-a-03: rgba(0, 0, 0, 0);
+  --color-black-a-03: rgba(0, 0, 0, 0.25);
+  --color-black-a-04: rgba(0, 0, 0, 0.5);
 
   --color-white-01: #ffffff;
   --color-white-02: #f9f5f0;
   --color-white-03: #f3f7f8;
   --color-white-04: #f1f5f7;
   --color-white-05: #c5c5c5;
-  --color-white-06: #a9a9a9;  
+  --color-white-06: #a9a9a9;
+  --color-white-07: #f1f1f1;
   --color-white-a-01: rgba(255, 255, 255, 1.0);
   --color-white-a-02: rgba(255, 255, 255, 0.5);
   --color-white-a-03: rgba(255, 255, 255, 0.3);
@@ -37,15 +39,15 @@
 
   --color-yellow-01: #ffd180;
   --color-yellow-02: #ffc047;
-  --color-yellow-03: #ffbf47;  
-  
+  --color-yellow-03: #ffbf47;
+
   --color-purple-01: #dc91d8;
 }
 
 body {
   margin: 0;
   padding: 0;
-  min-width: 1200px;
+  min-width: 970px;
 
   color: var(--color-black-01);
   font-family: $cuprum;

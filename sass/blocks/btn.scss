@@ -23,6 +23,21 @@
   }
 }
 
+.btn--light {
+  color: var(--color-black-01);
+  background-color: var(--color-white-01);
+
+  &:hover,
+  &:focus {
+    color: var(--color-red-01);
+    background-color: var(--color-white-01);
+  }
+
+  &:active {
+    color: var(--color-white-05);
+  }
+}
+
 .btn--bookmark {
   display: block;
   padding: 7px;

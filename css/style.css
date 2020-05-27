@@ -40,15 +40,17 @@
 
 :root {
   --color-black-01: #000000;
-  --color-black-a-01: rgba(0, 0, 0, 0.25);
+  --color-black-a-01: rgba(0, 0, 0, 0);
   --color-black-a-02: rgba(0, 0, 0, 0.15);
-  --color-black-a-03: rgba(0, 0, 0, 0);
+  --color-black-a-03: rgba(0, 0, 0, 0.25);
+  --color-black-a-04: rgba(0, 0, 0, 0.5);
   --color-white-01: #ffffff;
   --color-white-02: #f9f5f0;
   --color-white-03: #f3f7f8;
   --color-white-04: #f1f5f7;
   --color-white-05: #c5c5c5;
   --color-white-06: #a9a9a9;
+  --color-white-07: #f1f1f1;
   --color-white-a-01: rgba(255, 255, 255, 1.0);
   --color-white-a-02: rgba(255, 255, 255, 0.5);
   --color-white-a-03: rgba(255, 255, 255, 0.3);
@@ -79,7 +81,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1200px;
+  min-width: 970px;
   color: var(--color-black-01);
   font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
@@ -133,6 +135,20 @@ input[type="radio"].visually-hidden {
 
 .btn:active {
   background-color: var(--color-red-03);
+}
+
+.btn--light {
+  color: var(--color-black-01);
+  background-color: var(--color-white-01);
+}
+
+.btn--light:hover, .btn--light:focus {
+  color: var(--color-red-01);
+  background-color: var(--color-white-01);
+}
+
+.btn--light:active {
+  color: var(--color-white-05);
 }
 
 .btn--bookmark {
@@ -242,7 +258,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: var(--color-white-01);
   background-color: var(--color-red-01);
-  box-shadow: inset 0px -5px 0px var(--color-black-a-01);
+  box-shadow: inset 0px -5px 0px var(--color-black-a-03);
 }
 
 .btn-logo:hover:not(.btn-logo--active), .btn-logo:focus:not(.btn-logo--active) {
@@ -873,15 +889,15 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   color: var(--color-white-01);
   background-color: var(--color-blue-03);
-  background-image: linear-gradient(to bottom, var(--color-black-a-01) 105px, var(--color-black-a-03) 105px);
+  background-image: linear-gradient(to bottom, var(--color-black-a-03) 105px, var(--color-black-a-01) 105px);
 }
 
 .promo-slider--drills {
-  background-image: linear-gradient(to bottom, var(--color-black-a-01) 105px, var(--color-black-a-03) 105px), url("../img/features__drills.jpg");
+  background-image: linear-gradient(to bottom, var(--color-black-a-03) 105px, var(--color-black-a-01) 105px), url("../img/features__drills.jpg");
 }
 
 .promo-slider--perforators {
-  background-image: linear-gradient(to bottom, var(--color-black-a-01) 105px, var(--color-black-a-03) 105px), url("../img/features__perforators.jpg");
+  background-image: linear-gradient(to bottom, var(--color-black-a-03) 105px, var(--color-black-a-01) 105px), url("../img/features__perforators.jpg");
 }
 
 .promo-slider--hidden {
@@ -1048,7 +1064,7 @@ input[type="radio"].visually-hidden {
 }
 
 .brands__link:hover, .brands__link:focus {
-  box-shadow: 0px 4px 4px var(--color-black-a-01);
+  box-shadow: 0px 4px 4px var(--color-black-a-03);
 }
 
 .brands__link:active {
@@ -1396,14 +1412,95 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-.modal-map {
+.modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
   display: none;
+  border-top: 7px solid var(--color-red-01);
+  box-sizing: border-box;
+  background-color: var(--color-white-01);
+  box-shadow: 0px 4px 20px var(--color-black-a-02);
+}
+
+.modal-window--visible {
+  display: block;
+}
+
+.modal-window__close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: block;
+  padding: 0;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background: url("../img/modal__icon-close.svg") no-repeat center;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-black-a-04);
+}
+
+.modal-overlay--visible {
+  display: block;
+}
+
+.modal-map {
+  width: 943px;
+  min-height: 449px;
+  margin-left: -471px;
+  margin-top: -224px;
+  line-height: 0;
 }
 
 .modal-writeus {
-  display: none;
+  width: 620px;
+  min-height: 282px;
+  margin-left: -310px;
+  margin-top: -141px;
 }
 
 .modal-basket {
-  display: none;
+  width: 620px;
+  min-height: 282px;
+  margin-left: -310px;
+  margin-top: -141px;
+}
+
+.modal-basket__title {
+  position: relative;
+  margin: 68px 0;
+  text-align: center;
+}
+
+.modal-basket__title::before {
+  position: absolute;
+  top: -20px;
+  left: 81px;
+  content: url("../img/modal-basket__icon-mark.svg");
+}
+
+.modal-basket__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 37px 20px;
+  background-color: var(--color-white-07);
+}
+
+.modal-basket__checkout {
+  width: 192px;
+  margin-right: 8px;
+}
+
+.modal-basket__continue {
+  width: 192px;
 }

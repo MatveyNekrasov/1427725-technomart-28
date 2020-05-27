@@ -365,37 +365,6 @@
         </a>
 
         <a class="contacts__btn-writeus btn" href="#">Заблудились? Напишите нам!</a>
-
-        <section class="modal-map">
-          <h3 class="visually-hidden">Как до нас добраться</h3>
-          <button class="modal-map__close btn-close" type="button"><span class="visually-hidden">Закрыть
-              окно</span></button>
-        </section>
-
-        <section class="modal-writeus">
-          <h3 class="visually-hidden">Напишите нам</h3>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="modal-writeus__name-email">
-              <label class="modal-writeus__label">
-                Ваше имя:
-                <input class="writeus-input" type="text" name="name" placeholder="Имя Фамилия">
-              </label>
-              <label class="modal-writeus__label">
-                Ваш e-mail:
-                <input class="writeus-input" type="email" name="email" placeholder="email@example.com">
-              </label>
-            </div>
-            <label class="modal-writeus__label">
-              Текст письма:
-              <textarea class="writeus-input writeus-input-textarea" name="textarea"
-                placeholder="В свободной форме"></textarea>
-            </label>
-            <button class="btn" type="submit">Отправить</button>
-          </form>
-          <button class="modal-writeus__close btn-close" type="button"><span class="visually-hidden">Закрыть
-              окно</span></button>
-        </section>
-
       </section>
     </div>
   </main>
@@ -476,13 +445,45 @@
     </section>
   </footer>
 
-  <section class="modal-basket visually-hidden1">
-    <h2 class="modal-basket__title">Товар добавлен в корзину!</h2>
-    <button class="modal-basket__checkout btn" type="button">Оформить заказ</button>
-    <button class="modal-basket__continue btn" type="button">Продолжить покупки</button>
-    <button class="modal-basket__close btn-close" type="button"><span class="visually-hidden">Закрыть
-        окно</span></button>
-  </section>
+  <div class="modal-overlay">
+    <section class="modal-basket modal-window modal-window--visible">
+      <h2 class="modal-basket__title">Товар добавлен в корзину!</h2>
+      <p class="modal-basket__buttons">
+        <button class="modal-basket__checkout btn" type="button">Оформить заказ</button>
+        <button class="modal-basket__continue btn btn--light" type="button">Продолжить покупки</button>
+      </p>
+      <button class="modal-window__close" type="button" aria-label="Закрыть окно"></button>
+    </section>
+
+    <section class="modal-map modal-window">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="/img/modal-map__map.png" width=943 height=442 alt="Большая Конюшенная ул., 19">
+      <button class="modal-window__close" type="button" aria-label="Закрыть окно"></button>
+    </section>
+
+    <section class="modal-writeus modal-window">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-writeus__name-email">
+          <label class="modal-writeus__label">
+            Ваше имя:
+            <input class="writeus-input" type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label class="modal-writeus__label">
+            Ваш e-mail:
+            <input class="writeus-input" type="email" name="email" placeholder="email@example.com">
+          </label>
+        </div>
+        <label class="modal-writeus__label">
+          Текст письма:
+          <textarea class="writeus-input writeus-input-textarea" name="textarea"
+            placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+      <button class="modal-window__close" type="button" aria-label="Закрыть окно"></button>
+    </section>
+  </div>
 
 </body>
 
