@@ -3,7 +3,7 @@
 
   display: block;
   min-height: 45px;
-  padding: 12px 10px;
+  padding: 12px 27px;
   box-sizing: border-box;
 
   color: var(--color-black-01);
@@ -17,81 +17,60 @@
   &:hover,
   &:focus {
     color: var(--color-red-01);
+
+    .btn-un__icon {
+      color: var(--color-blue-08);
+    }
   }
 
   &:active {
     color: var(--color-white-05);
+
+    .btn-un__icon {
+      color: var(--color-white-05);
+    }
   }
 
   &--login {
-    min-width: 121px;
-    padding-left: 28px;
-
-    &::before {
-      position: absolute;
-      content: url("../img/user-nav__icon-login.svg");
-      top: 13px;
-      left: 19px;
-    }
-
-    &:hover::before,
-    &:focus::before {
-      content: url("../img/user-nav__icon-login--hover.svg");
-    }
-
-    &:active::before {
-      content: url("../img/user-nav__icon-login.svg");
-    }
-
+    padding-left: 46px;
+    padding-right: 27px;
   }
 
   &--register {
-    min-width: 150px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   &--profile {
-    min-width: 300px;
-    padding-left: 11px;
+    padding-left: 56px;
+    padding-right: 7px;
+  }
 
-    &:hover,
-    &:focus {
-      color: var(--color-black-01);
-    }
+  &--logout {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 
-    &:active {
-      color: var(--color-white-05);
-    }
+.btn-un__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    &::before {
-      position: absolute;
-      content: url("../img/user-nav__icon-user.svg");
-      top: 13px;
-      left: 16px;
-    }
+  color: var(--color-white-05);
 
-    &:hover::before,
-    &:focus::before {
-      content: url("../img/user-nav__icon-user--hover.svg");
-    }
+  &--login {
+    top: 14px;
+    left: 19px;
+  }
 
-    &:active::before {
-      content: url("../img/user-nav__icon-user.svg");
-    }
+  &--profile {
+    top: 14px;
+    left: 15px;
+  }
 
-    &::after {
-      position: absolute;
-      content: url("../img/user-nav__icon-logout.svg");
-      top: 14px;
-      right: 17px;
-    }
-
-    &:hover::after,
-    &:focus::after {
-      content: url("../img/user-nav__icon-logout--hover.svg");
-    }
-
-    &:active::after {
-      content: url("../img/user-nav__icon-logout.svg");
-    }
+  &--logout {
+    top: 14px;
+    left: 11px;
   }
 }

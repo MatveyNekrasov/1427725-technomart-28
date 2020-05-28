@@ -36,12 +36,13 @@
           </svg>
           Закладки: 0
         </a>
-        <a class="user-controls__basket btn-uc btn-uc--with-icon" href="#">Корзина: 0
+        <a class="user-controls__basket btn-uc btn-uc--with-icon" href="#">
           <svg class="btn-uc__icon btn-uc__icon--basket" width="14" height="16">
             <use xlink:href="img/sprite.svg#common__icon-basket"></use>
           </svg>
+          Корзина: 0
         </a>
-        <a class="user-controls__buy btn-uc btn-uc--buy" href="#">Оформить заказ</a>
+        <a class="user-controls__checkout btn-uc btn-uc--checkout" href="#">Оформить заказ</a>
 
       </div>
     </section>
@@ -57,17 +58,41 @@
 
       <section class="header__user-nav user-nav">
         <h2 class="visually-hidden">Пользовательская навигация</h2>
-
-        <div class="user-nav__controls">
-          <ul class="user-nav__not-logged-list">
-            <li><a class="user-nav__login btn-un btn-un--login" href="#">Войти</a></li>
-            <li><a class="user-nav__register btn-un btn-un--register" href="#">Регистрация</a></li>
+        <div class="user-nav__controls ">
+          <ul class="user-nav__buttons">
+            <li>
+              <a class="user-nav__login btn-un btn-un--login" href="#">
+                <svg class="btn-un__icon btn-un__icon--login" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#user-nav__icon-login"></use>
+                </svg>
+                Войти
+              </a>
+            </li>
+            <li>
+              <a class="user-nav__register btn-un btn-un--register" href="#">Регистрация</a>
+            </li>
           </ul>
         </div>
 
         <div class="user-nav__controls user-nav__controls--hidden">
-          <a class="user-nav__profile btn-un btn-un--profile" href="#">Равшан Джамшутович</a>
-
+          <ul class="user-nav__buttons user-nav__buttons--solid">
+            <li>
+              <a class="user-nav__profile btn-un btn-un--profile" href="#">
+                <svg class="btn-un__icon btn-un__icon--profile" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#user-nav__icon-profile"></use>
+                </svg>
+                Равшан Джамшутович
+              </a>
+            </li>
+            <li>
+              <a class="user-nav__logout btn-un btn-un--logout" href="#">
+                <svg class="btn-un__icon btn-un__icon--logout" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#user-nav__icon-logout"></use>
+                </svg>
+                <span class="visually-hidden">Деавторизация</span>
+              </a>
+            </li>
+          </ul>
           <ul class="user-nav__logged-list">
             <li><a class="user-nav__orders link-un link-un--circle" href="#">Мои заказы</a></li>
             <li><a class="user-nav__cabinet link-un" href="#">Личный кабинет</a></li>
@@ -76,7 +101,7 @@
       </section>
     </div>
 
-    <nav class="container-centering">
+    <nav class="container-centering ">
       <section class="site-nav">
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="site-nav__list">

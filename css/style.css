@@ -72,6 +72,7 @@
   --color-blue-05: #212a3a;
   --color-blue-06: #1d2739;
   --color-blue-07: #161d29;
+  --color-blue-08: #3d546f;
   --color-yellow-01: #ffd180;
   --color-yellow-02: #ffc047;
   --color-yellow-03: #ffbf47;
@@ -384,21 +385,23 @@ input[type="radio"].visually-hidden {
   color: var(--color-white-a-03);
 }
 
-.btn-uc--buy {
+.btn-uc--checkout {
   background-color: var(--color-green-02);
 }
 
-.btn-uc--buy:hover, .btn-uc--buy:focus {
+.btn-uc--checkout:hover, .btn-uc--checkout:focus {
   background-color: var(--color-green-03);
 }
 
-.btn-uc--buy:active {
+.btn-uc--checkout:active {
   color: var(--color-white-a-02);
   background-color: var(--color-green-02);
 }
 
 .btn-uc__icon {
   position: absolute;
+  top: 0;
+  left: 0;
   color: var(--color-white-a-03);
 }
 
@@ -506,15 +509,23 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.user-nav__not-logged-list {
+.user-nav__buttons {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.user-nav__buttons--solid {
+  background-color: var(--color-white-01);
+}
+
 .user-nav__login {
   margin-right: 10px;
+}
+
+.user-nav__profile {
+  margin-right: 2px;
 }
 
 .user-nav__logged-list {
@@ -529,7 +540,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: block;
   min-height: 45px;
-  padding: 12px 10px;
+  padding: 12px 27px;
   box-sizing: border-box;
   color: var(--color-black-01);
   text-decoration: none;
@@ -543,75 +554,58 @@ input[type="radio"].visually-hidden {
   color: var(--color-red-01);
 }
 
+.btn-un:hover .btn-un__icon, .btn-un:focus .btn-un__icon {
+  color: var(--color-blue-08);
+}
+
 .btn-un:active {
   color: var(--color-white-05);
 }
 
-.btn-un--login {
-  min-width: 121px;
-  padding-left: 28px;
-}
-
-.btn-un--login::before {
-  position: absolute;
-  content: url("../img/user-nav__icon-login.svg");
-  top: 13px;
-  left: 19px;
-}
-
-.btn-un--login:hover::before, .btn-un--login:focus::before {
-  content: url("../img/user-nav__icon-login--hover.svg");
-}
-
-.btn-un--login:active::before {
-  content: url("../img/user-nav__icon-login.svg");
-}
-
-.btn-un--register {
-  min-width: 150px;
-}
-
-.btn-un--profile {
-  min-width: 300px;
-  padding-left: 11px;
-}
-
-.btn-un--profile:hover, .btn-un--profile:focus {
-  color: var(--color-black-01);
-}
-
-.btn-un--profile:active {
+.btn-un:active .btn-un__icon {
   color: var(--color-white-05);
 }
 
-.btn-un--profile::before {
+.btn-un--login {
+  padding-left: 46px;
+  padding-right: 27px;
+}
+
+.btn-un--register {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.btn-un--profile {
+  padding-left: 56px;
+  padding-right: 7px;
+}
+
+.btn-un--logout {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.btn-un__icon {
   position: absolute;
-  content: url("../img/user-nav__icon-user.svg");
-  top: 13px;
-  left: 16px;
+  top: 0;
+  left: 0;
+  color: var(--color-white-05);
 }
 
-.btn-un--profile:hover::before, .btn-un--profile:focus::before {
-  content: url("../img/user-nav__icon-user--hover.svg");
-}
-
-.btn-un--profile:active::before {
-  content: url("../img/user-nav__icon-user.svg");
-}
-
-.btn-un--profile::after {
-  position: absolute;
-  content: url("../img/user-nav__icon-logout.svg");
+.btn-un__icon--login {
   top: 14px;
-  right: 17px;
+  left: 19px;
 }
 
-.btn-un--profile:hover::after, .btn-un--profile:focus::after {
-  content: url("../img/user-nav__icon-logout--hover.svg");
+.btn-un__icon--profile {
+  top: 14px;
+  left: 15px;
 }
 
-.btn-un--profile:active::after {
-  content: url("../img/user-nav__icon-logout.svg");
+.btn-un__icon--logout {
+  top: 14px;
+  left: 11px;
 }
 
 .site-nav {
