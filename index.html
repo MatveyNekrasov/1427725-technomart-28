@@ -21,14 +21,14 @@
           <img src="img/user-controls__logo.svg" width="108" height="18" alt="На главную">
         </a>
         <form class="user-controls__search-form" method="get" action="https://echo.htmlacademy.ru">
-          <button class="user-controls__search-btn">
+          <button class="user-controls__search-btn" type="submit">
             <span class="visually-hidden">Найти</span>
             <svg width="17" height="17">
               <use xlink:href="img/sprite.svg#user-controls__icon-search"></use>
             </svg>
           </button>
           <input class="user-controls__search-input" type="search" placeholder="Поиск:" id="user-controls__search-input"
-            aria-label="Введите текст для поиска">
+            name="search" aria-label="Введите текст для поиска">
         </form>
         <a class="user-controls__bookmarks btn-uc btn-uc--with-icon" href="#">
           <svg class="btn-uc__icon btn-uc__icon--bookmark" width="14" height="16">
@@ -58,7 +58,7 @@
 
       <section class="header__user-nav user-nav">
         <h2 class="visually-hidden">Пользовательская навигация</h2>
-        <div class="user-nav__controls ">
+        <div class="user-nav__controls user-nav__controls--visible">
           <ul class="user-nav__buttons">
             <li>
               <a class="user-nav__login btn-un btn-un--login" href="#">
@@ -74,7 +74,7 @@
           </ul>
         </div>
 
-        <div class="user-nav__controls user-nav__controls--hidden">
+        <div class="user-nav__controls">
           <ul class="user-nav__buttons user-nav__buttons--solid">
             <li>
               <a class="user-nav__profile btn-un btn-un--profile" href="#">

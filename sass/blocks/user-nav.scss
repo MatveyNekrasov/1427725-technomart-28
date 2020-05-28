@@ -3,8 +3,10 @@
 }
 
 .user-nav__controls {
-  &--hidden {
-    display: none;
+  display: none;
+
+  &--visible {
+    display: block;
   }
 }
 

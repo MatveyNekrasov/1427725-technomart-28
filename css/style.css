@@ -505,8 +505,12 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
-.user-nav__controls--hidden {
+.user-nav__controls {
   display: none;
+}
+
+.user-nav__controls--visible {
+  display: block;
 }
 
 .user-nav__buttons {
