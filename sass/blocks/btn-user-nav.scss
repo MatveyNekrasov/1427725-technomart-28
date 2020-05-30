@@ -1,4 +1,4 @@
-.btn-un {
+.btn-user-nav {
   position: relative;
 
   display: block;
@@ -18,7 +18,7 @@
   &:focus {
     color: var(--color-red-01);
 
-    .btn-un__icon {
+    .btn-user-nav__icon {
       color: var(--color-blue-08);
     }
   }
@@ -26,7 +26,7 @@
   &:active {
     color: var(--color-white-05);
 
-    .btn-un__icon {
+    .btn-user-nav__icon {
       color: var(--color-white-05);
     }
   }
@@ -52,7 +52,7 @@
   }
 }
 
-.btn-un__icon {
+.btn-user-nav__icon {
   position: absolute;
   top: 0;
   left: 0;

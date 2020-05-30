@@ -1,0 +1,38 @@
+.btn-buy {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-left: 20px;
+  width: 135px;
+  border-radius: 2px;
+
+  color: var(--color-white-01);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  box-shadow: inset 0px -3px 0px var(--color-green-05);
+  background-color: var(--color-green-02);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-green-03);
+  }
+
+  &:active {
+    background-color: var(--color-green-04);
+    box-shadow: none;
+  }
+
+  &::before {
+    position: absolute;
+    content: url("../img/common__icon-basket.svg");
+    top: 10px;
+    left: 29px;
+
+    opacity: 0.3;
+  }
+}
