@@ -37,28 +37,6 @@
   }
 }
 
-.btn--price {
-  width: 141px;
-  padding-left: 0px;
-
-  font-family: $ptsans;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-
-  background-color: transparent;
-  background-image: url("../img/common__red-button.svg");
-
-  &:hover,
-  &:focus {
-    background-color: transparent;
-  }
-
-  &:active {
-    background-color: transparent;
-  }
-}
-
 .btn--services {
   padding: 19px 22px 21px;
 

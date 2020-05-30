@@ -151,25 +151,6 @@ input[type="radio"].visually-hidden {
   color: var(--color-white-05);
 }
 
-.btn--price {
-  width: 141px;
-  padding-left: 0px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-  background-color: transparent;
-  background-image: url("../img/common__red-button.svg");
-}
-
-.btn--price:hover, .btn--price:focus {
-  background-color: transparent;
-}
-
-.btn--price:active {
-  background-color: transparent;
-}
-
 .btn--services {
   padding: 19px 22px 21px;
   font-size: 21px;
@@ -267,17 +248,30 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  background-color: transparent;
 }
 
 .btn-bookmark:hover, .btn-bookmark:focus {
   border: 3px solid var(--color-blue-03);
-  background-color: transparent;
 }
 
 .btn-bookmark:active {
   opacity: 0.5;
-  background-color: transparent;
+}
+
+.btn-price {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 0px;
+  width: 141px;
+  box-sizing: border-box;
+  color: var(--color-white-01);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  vertical-align: bottom;
+  background-image: url("../img/common__red-button.svg");
 }
 
 .user-controls {

@@ -1,0 +1,17 @@
+.btn-price {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 0px;
+  width: 141px;
+  box-sizing: border-box;
+
+  color: var(--color-white-01);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: $ptsans;
+  font-size: 17px;
+  font-weight: 700;
+  vertical-align: bottom;
+
+  background-image: url("../img/common__red-button.svg");
+}
