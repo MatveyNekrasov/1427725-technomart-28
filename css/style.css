@@ -151,38 +151,6 @@ input[type="radio"].visually-hidden {
   color: var(--color-white-05);
 }
 
-.btn--services {
-  padding: 19px 22px 21px;
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-  text-transform: none;
-  text-align: start;
-  background-color: var(--color-blue-03);
-  box-shadow: inset 0 1px 0 var(--color-blue-04), inset 0 2px 0 var(--color-blue-02);
-}
-
-.btn--services:hover, .btn--services:focus {
-  color: var(--color-white-01);
-  background-color: var(--color-blue-04);
-}
-
-.btn--services:active {
-  color: var(--color-white-a-02);
-  background-color: var(--color-blue-06);
-}
-
-.btn--services--active {
-  color: var(--color-blue-03);
-  background-color: var(--color-white-01);
-  box-shadow: none;
-}
-
-.btn--services--active:hover, .btn--services--active:focus {
-  color: var(--color-blue-03);
-  background-color: var(--color-white-01);
-}
-
 .btn-logo {
   display: inline-block;
   padding-top: 12px;
@@ -272,6 +240,41 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   vertical-align: bottom;
   background-image: url("../img/common__red-button.svg");
+}
+
+.btn-services {
+  display: block;
+  box-sizing: border-box;
+  padding: 18px 22px 20px;
+  color: var(--color-white-01);
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: none;
+  text-align: start;
+  background-color: var(--color-blue-03);
+  box-shadow: inset 0 1px 0 var(--color-blue-04), inset 0 2px 0 var(--color-blue-02);
+  border: none;
+}
+
+.btn-services:hover, .btn-services:focus {
+  color: var(--color-white-01);
+  background-color: var(--color-blue-04);
+}
+
+.btn-services:active {
+  color: var(--color-white-a-02);
+  background-color: var(--color-blue-06);
+}
+
+.btn-services--active {
+  color: var(--color-blue-03);
+  background-color: var(--color-white-01);
+  box-shadow: none;
+}
+
+.btn-services--active:hover, .btn-services--active:focus {
+  color: var(--color-blue-03);
+  background-color: var(--color-white-01);
 }
 
 .user-controls {
