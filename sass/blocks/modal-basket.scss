@@ -1,6 +1,5 @@
 .modal-basket {
   width: 620px;
-  min-height: 282px;
   margin-left: -310px;
   margin-top: -141px;
 }
@@ -8,13 +7,13 @@
 .modal-basket__title {
   position: relative;
 
-  margin: 68px 0;
+  margin: 73px 0;
 
   text-align: center;
 
   &::before {
     position: absolute;
-    top: -20px;
+    top: -25px;
     left: 81px;
     content: url("../img/modal-basket__icon-mark.svg");
   }

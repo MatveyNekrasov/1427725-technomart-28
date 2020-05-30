@@ -63,7 +63,7 @@
   font-family: $ptsans;
   font-size: 18px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 1.12em;
 }
 
 .product__price-previous {
@@ -75,7 +75,6 @@
   font-family: $ptsans;
   font-size: 17px;
   font-weight: 700;
-  line-height: 18px;
   text-decoration: line-through;
   text-transform: uppercase;
 }

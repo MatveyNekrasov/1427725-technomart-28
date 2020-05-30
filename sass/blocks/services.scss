@@ -6,11 +6,9 @@
 }
 
 .services__title {
-  margin: 0;
-  padding-bottom: 25px;
+  margin: 6px 0 31px;
 
   font-size: 30px;
-  line-height: 30px;
   text-transform: uppercase;
   letter-spacing: -0.8px;
 }
@@ -18,11 +16,11 @@
 .services__desc {
   margin: 0;
   max-width: 400px;
-  padding-bottom: 71px;
+  margin-bottom: 71px;
 
   font-family: $ptsans;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 1.85em;
 }
 
 .services__container {
@@ -67,21 +65,21 @@
     position: absolute;
     content: url("../img/services__delivery.png");
     left: 151px;
-    top: 20px;
+    top: 15px;
   }
 
   &--guarantee::before {
     position: absolute;
     content: url("../img/services__guarantee.png");
     left: 239px;
-    top: 2px;
+    top: -3px;
   }
 
   &--credit::before {
     position: absolute;
     content: url("../img/services__credit.png");
     left: 165px;
-    top: 0px;
+    top: -5px;
   }
 }
 
@@ -89,12 +87,10 @@
   position: relative;
 
   margin: 0;
-  margin-top: -2px;
-  padding-bottom: 27px;
+  margin: 3px 0 34px;
 
   color: var(--color-blue-03);
   font-size: 30px;
-  line-height: 30px;
   text-transform: uppercase;
   letter-spacing: -0.8px;
 }
@@ -108,7 +104,7 @@
   color: var(--color-black-01);
   font-family: $ptsans;
   font-size: 13px;
-  line-height: 25px;
+  line-height: 1.95em;
 }
 
 .services__btn-credit {

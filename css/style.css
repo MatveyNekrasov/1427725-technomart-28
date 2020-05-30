@@ -330,7 +330,7 @@ input[type="radio"].visually-hidden {
   flex-grow: 1;
   color: var(--color-white-01);
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.35em;
   background-color: inherit;
   border: none;
 }
@@ -368,7 +368,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   text-align: center;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33em;
 }
 
 .btn-user-controls:hover, .btn-user-controls:focus {
@@ -438,7 +438,6 @@ input[type="radio"].visually-hidden {
   color: var(--color-blue-03);
   font-size: 30px;
   font-weight: 400;
-  line-height: 30px;
   text-transform: uppercase;
 }
 
@@ -460,10 +459,10 @@ input[type="radio"].visually-hidden {
   width: 200px;
   margin: 0;
   margin-right: 60px;
-  padding: 45px 30px 44px 30px;
+  padding: 43px 30px 43px 30px;
   color: var(--color-red-01);
   font-size: 16px;
-  line-height: 23px;
+  line-height: 1.5em;
   font-weight: 400;
   font-style: italic;
 }
@@ -479,11 +478,10 @@ input[type="radio"].visually-hidden {
   display: block;
   border: 3px solid var(--color-white-01);
   margin-bottom: 3px;
-  padding-left: 30px;
+  padding: 10px 0 11px 30px;
   box-sizing: border-box;
   color: var(--color-red-01);
   font-size: 21px;
-  line-height: 39px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -492,7 +490,7 @@ input[type="radio"].visually-hidden {
 .header__phone::before {
   position: absolute;
   content: url("../img/user-controls__icon-phone.svg");
-  top: 3px;
+  top: 10px;
   left: 36px;
 }
 
@@ -500,7 +498,7 @@ input[type="radio"].visually-hidden {
   color: var(--color-blue-03);
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.72em;
   text-align: center;
 }
 
@@ -551,13 +549,12 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: block;
   min-height: 45px;
-  padding: 12px 27px;
+  padding: 13px 27px;
   box-sizing: border-box;
   color: var(--color-black-01);
   text-decoration: none;
   text-align: center;
   font-size: 21px;
-  line-height: 21px;
   background-color: var(--color-white-01);
 }
 
@@ -645,7 +642,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 19px;
   color: var(--color-white-01);
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.35em;
   text-decoration: none;
 }
 
@@ -665,7 +662,6 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   color: var(--color-blue-03);
   font-size: 16px;
-  line-height: 18px;
   text-decoration: none;
 }
 
@@ -780,7 +776,7 @@ input[type="radio"].visually-hidden {
   color: var(--color-white-01);
   font-weight: 700;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.25em;
 }
 
 .promo-cart__link {
@@ -790,7 +786,7 @@ input[type="radio"].visually-hidden {
   max-width: 135px;
   color: var(--color-white-01);
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3em;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -844,7 +840,6 @@ input[type="radio"].visually-hidden {
   left: 50%;
   top: 214px;
   display: flex;
-  line-height: 0;
   transform: translateX(-50%);
 }
 
@@ -910,12 +905,9 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider__title {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 6px;
+  margin: 9px 0 15px;
   font-size: 36px;
   font-weight: 700;
-  line-height: 36px;
   text-transform: uppercase;
 }
 
@@ -925,7 +917,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 112px;
   color: var(--color-white-01);
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.35em;
 }
 
 .promo-slider__btn {
@@ -1015,7 +1007,7 @@ input[type="radio"].visually-hidden {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 1.12em;
 }
 
 .product__price-previous {
@@ -1026,7 +1018,6 @@ input[type="radio"].visually-hidden {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
-  line-height: 18px;
   text-decoration: line-through;
   text-transform: uppercase;
 }
@@ -1084,10 +1075,8 @@ input[type="radio"].visually-hidden {
 }
 
 .services__title {
-  margin: 0;
-  padding-bottom: 25px;
+  margin: 6px 0 31px;
   font-size: 30px;
-  line-height: 30px;
   text-transform: uppercase;
   letter-spacing: -0.8px;
 }
@@ -1095,10 +1084,10 @@ input[type="radio"].visually-hidden {
 .services__desc {
   margin: 0;
   max-width: 400px;
-  padding-bottom: 71px;
+  margin-bottom: 71px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 1.85em;
 }
 
 .services__container {
@@ -1141,31 +1130,29 @@ input[type="radio"].visually-hidden {
   position: absolute;
   content: url("../img/services__delivery.png");
   left: 151px;
-  top: 20px;
+  top: 15px;
 }
 
 .services__item--guarantee::before {
   position: absolute;
   content: url("../img/services__guarantee.png");
   left: 239px;
-  top: 2px;
+  top: -3px;
 }
 
 .services__item--credit::before {
   position: absolute;
   content: url("../img/services__credit.png");
   left: 165px;
-  top: 0px;
+  top: -5px;
 }
 
 .services__item-title {
   position: relative;
   margin: 0;
-  margin-top: -2px;
-  padding-bottom: 27px;
+  margin: 3px 0 34px;
   color: var(--color-blue-03);
   font-size: 30px;
-  line-height: 30px;
   text-transform: uppercase;
   letter-spacing: -0.8px;
 }
@@ -1177,7 +1164,7 @@ input[type="radio"].visually-hidden {
   color: var(--color-black-01);
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
-  line-height: 25px;
+  line-height: 1.95em;
 }
 
 .services__btn-credit {
@@ -1201,7 +1188,7 @@ input[type="radio"].visually-hidden {
   padding-left: 37px;
   padding-bottom: 16px;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 1.15em;
 }
 
 .about__transport-company::before {
@@ -1258,7 +1245,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 54px;
   color: var(--color-white-01);
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.35em;
   background-color: var(--color-blue-03);
 }
 
@@ -1331,7 +1318,6 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  line-height: 0;
   list-style: none;
 }
 
@@ -1367,7 +1353,7 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts {
   padding-top: 36px;
-  padding-bottom: 29px;
+  padding-bottom: 26px;
   color: var(--color-white-01);
   background-color: var(--color-blue-04);
 }
@@ -1381,7 +1367,7 @@ input[type="radio"].visually-hidden {
   margin-right: 90px;
   width: 300px;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.2em;
 }
 
 .footer-contacts__socials {
@@ -1447,7 +1433,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 37px 20px;
+  padding: 38px 20px;
   background-color: var(--color-white-07);
 }
 
@@ -1470,7 +1456,10 @@ input[type="radio"].visually-hidden {
   min-height: 449px;
   margin-left: -471px;
   margin-top: -224px;
-  line-height: 0;
+}
+
+.modal-map__img {
+  vertical-align: top;
 }
 
 .writeus-input {
@@ -1481,7 +1470,6 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
   padding: 9px 11px;
   font-size: 14px;
-  line-height: 14px;
 }
 
 .writeus-input--textarea {
@@ -1491,7 +1479,6 @@ input[type="radio"].visually-hidden {
 
 .modal-writeus {
   width: 620px;
-  min-height: 430px;
   margin-left: -310px;
   margin-top: -215px;
 }
@@ -1509,7 +1496,6 @@ input[type="radio"].visually-hidden {
 
 .modal-writeus__label {
   font-size: 18px;
-  line-height: 18px;
 }
 
 .modal-writeus__label-text {
@@ -1527,20 +1513,19 @@ input[type="radio"].visually-hidden {
 
 .modal-basket {
   width: 620px;
-  min-height: 282px;
   margin-left: -310px;
   margin-top: -141px;
 }
 
 .modal-basket__title {
   position: relative;
-  margin: 68px 0;
+  margin: 73px 0;
   text-align: center;
 }
 
 .modal-basket__title::before {
   position: absolute;
-  top: -20px;
+  top: -25px;
   left: 81px;
   content: url("../img/modal-basket__icon-mark.svg");
 }
