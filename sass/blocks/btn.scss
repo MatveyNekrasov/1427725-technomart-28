@@ -37,29 +37,6 @@
   }
 }
 
-.btn--bookmark {
-  display: block;
-  padding: 7px;
-  width: 135px;
-  border: 3px solid var(--color-green-02);
-  border-radius: 2px;
-
-  color: var(--color-blue-03);
-
-  background-color: transparent;
-
-  &:hover,
-  &:focus {
-    border: 3px solid var(--color-blue-03);
-    background-color: transparent;
-  }
-
-  &:active {
-    opacity: 0.5;
-    background-color: transparent;
-  }
-}
-
 .btn--price {
   width: 141px;
   padding-left: 0px;

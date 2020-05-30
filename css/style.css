@@ -151,26 +151,6 @@ input[type="radio"].visually-hidden {
   color: var(--color-white-05);
 }
 
-.btn--bookmark {
-  display: block;
-  padding: 7px;
-  width: 135px;
-  border: 3px solid var(--color-green-02);
-  border-radius: 2px;
-  color: var(--color-blue-03);
-  background-color: transparent;
-}
-
-.btn--bookmark:hover, .btn--bookmark:focus {
-  border: 3px solid var(--color-blue-03);
-  background-color: transparent;
-}
-
-.btn--bookmark:active {
-  opacity: 0.5;
-  background-color: transparent;
-}
-
 .btn--price {
   width: 141px;
   padding-left: 0px;
@@ -244,11 +224,11 @@ input[type="radio"].visually-hidden {
 .btn-buy {
   position: relative;
   display: block;
-  box-sizing: border-box;
   padding: 10px;
   padding-left: 20px;
   width: 135px;
   border-radius: 2px;
+  box-sizing: border-box;
   color: var(--color-white-01);
   font-size: 14px;
   text-transform: uppercase;
@@ -273,6 +253,31 @@ input[type="radio"].visually-hidden {
   top: 10px;
   left: 29px;
   opacity: 0.3;
+}
+
+.btn-bookmark {
+  display: block;
+  padding: 7px;
+  width: 135px;
+  border: 3px solid var(--color-green-02);
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: var(--color-blue-03);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+}
+
+.btn-bookmark:hover, .btn-bookmark:focus {
+  border: 3px solid var(--color-blue-03);
+  background-color: transparent;
+}
+
+.btn-bookmark:active {
+  opacity: 0.5;
+  background-color: transparent;
 }
 
 .user-controls {
