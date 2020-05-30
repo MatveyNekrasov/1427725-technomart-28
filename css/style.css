@@ -352,7 +352,7 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
-.btn-uc {
+.btn-user-controls {
   position: relative;
   min-width: 150px;
   padding: 9px 0;
@@ -364,53 +364,53 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
-.btn-uc:hover, .btn-uc:focus {
+.btn-user-controls:hover, .btn-user-controls:focus {
   background-color: var(--color-blue-05);
 }
 
-.btn-uc:active {
+.btn-user-controls:active {
   color: var(--color-white-a-02);
   background-color: var(--color-blue-07);
 }
 
-.btn-uc--with-icon {
+.btn-user-controls--with-icon {
   padding-left: 20px;
 }
 
-.btn-uc--with-icon:hover .btn-uc__icon, .btn-uc--with-icon:focus .btn-uc__icon {
+.btn-user-controls--with-icon:hover .btn-user-controls__icon, .btn-user-controls--with-icon:focus .btn-user-controls__icon {
   color: var(--color-white-a-01);
 }
 
-.btn-uc--with-icon:active .btn-uc__icon {
+.btn-user-controls--with-icon:active .btn-user-controls__icon {
   color: var(--color-white-a-03);
 }
 
-.btn-uc--checkout {
+.btn-user-controls--checkout {
   background-color: var(--color-green-02);
 }
 
-.btn-uc--checkout:hover, .btn-uc--checkout:focus {
+.btn-user-controls--checkout:hover, .btn-user-controls--checkout:focus {
   background-color: var(--color-green-03);
 }
 
-.btn-uc--checkout:active {
+.btn-user-controls--checkout:active {
   color: var(--color-white-a-02);
   background-color: var(--color-green-02);
 }
 
-.btn-uc__icon {
+.btn-user-controls__icon {
   position: absolute;
   top: 0;
   left: 0;
   color: var(--color-white-a-03);
 }
 
-.btn-uc__icon--bookmark {
+.btn-user-controls__icon--bookmark {
   top: 12px;
   left: 20px;
 }
 
-.btn-uc__icon--basket {
+.btn-user-controls__icon--basket {
   top: 12px;
   left: 26px;
 }
