@@ -651,7 +651,7 @@ input[type="radio"].visually-hidden {
   background-color: var(--color-blue-06);
 }
 
-.link-un {
+.link-user-nav {
   position: relative;
   display: block;
   padding: 7px 0;
@@ -662,19 +662,19 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-.link-un:hover, .link-un:focus {
+.link-user-nav:hover, .link-user-nav:focus {
   color: var(--color-red-01);
 }
 
-.link-un:active {
+.link-user-nav:active {
   color: var(--color-white-05);
 }
 
-.link-un--circle {
+.link-user-nav--circle {
   margin-right: 33px;
 }
 
-.link-un--circle::after {
+.link-user-nav--circle::after {
   position: absolute;
   content: "";
   width: 4px;
