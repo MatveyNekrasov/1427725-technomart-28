@@ -4,6 +4,7 @@
 
 .site-nav__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding-left: 24px;
@@ -22,8 +23,7 @@
 
 .site-nav__link {
   display: block;
-  padding-top: 17px;
-  padding-bottom: 19px;
+  padding: 17px 10px 19px;
 
   color: var(--color-white-01);
   font-size: 18px;

@@ -84,12 +84,6 @@ img {
   height: auto;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .body {
   display: grid;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
@@ -636,6 +630,7 @@ input[type="radio"].visually-hidden {
 
 .site-nav__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding-left: 24px;
@@ -652,8 +647,7 @@ input[type="radio"].visually-hidden {
 
 .site-nav__link {
   display: block;
-  padding-top: 17px;
-  padding-bottom: 19px;
+  padding: 17px 10px 19px;
   color: var(--color-white-01);
   font-size: 18px;
   line-height: 1.35em;
