@@ -1,5 +1,5 @@
 .popular {
-  padding-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .popular__title {
@@ -7,16 +7,11 @@
 }
 
 .popular__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   margin: 0;
-  margin-right: -20px;
   padding: 0;
 
   list-style: none;
-}
-
-.popular__item {
-  margin-right: 20px;
-  margin-bottom: 20px;
 }
