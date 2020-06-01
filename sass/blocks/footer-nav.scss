@@ -22,9 +22,8 @@
 }
 
 .footer-nav__logo {
-  margin-bottom: 23px;
-  padding-top: 20px;
-  padding-bottom: 18px;
+  min-height: 63px;
+  margin-bottom: 28px;
 }
 
 .footer-nav__address {
@@ -55,9 +54,7 @@
   list-style: none;
 }
 
-.footer-nav__item {
-  
-}
+.footer-nav__item {}
 
 .footer-nav__lnk {
   display: block;

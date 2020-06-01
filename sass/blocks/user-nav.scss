@@ -1,6 +1,4 @@
-.user-nav {
-  margin-left: auto;
-}
+.user-nav {}
 
 .user-nav__controls {
   display: none;
@@ -12,6 +10,8 @@
 
 .user-nav__buttons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
 

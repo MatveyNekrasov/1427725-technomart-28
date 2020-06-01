@@ -17,7 +17,7 @@
     <section class="user-controls">
       <h2 class="visually-hidden">Пользовательские элементы управления</h2>
       <div class="user-controls__container container-centering ">
-        <a class="user-controls__logo btn-logo btn-logo--active">
+        <a class="btn-logo btn-logo--active">
           <img src="img/user-controls__logo.svg" width="108" height="18" alt="На главную">
         </a>
         <form class="user-controls__search-form" method="get" action="https://echo.htmlacademy.ru">
@@ -30,19 +30,23 @@
           <input class="user-controls__search-input" type="search" placeholder="Поиск:" id="user-controls__search-input"
             name="search" aria-label="Введите текст для поиска">
         </form>
-        <a class="user-controls__bookmarks btn-user-controls btn-user-controls--with-icon" href="#">
-          <svg class="btn-user-controls__icon btn-user-controls__icon--bookmark" width="14" height="16">
-            <use xlink:href="img/sprite.svg#user-controls__icon-bookmark"></use>
-          </svg>
-          Закладки: 0
-        </a>
-        <a class="user-controls__basket btn-user-controls btn-user-controls--with-icon" href="#">
-          <svg class="btn-user-controls__icon btn-user-controls__icon--basket" width="14" height="16">
-            <use xlink:href="img/sprite.svg#common__icon-basket"></use>
-          </svg>
-          Корзина: 0
-        </a>
-        <a class="user-controls__checkout btn-user-controls btn-user-controls--checkout" href="#">Оформить заказ</a>
+        <div class="user-controls__buttons">
+
+
+          <a class="user-controls__bookmarks btn-user-controls btn-user-controls--with-icon" href="#">
+            <svg class="btn-user-controls__icon btn-user-controls__icon--bookmark" width="14" height="16">
+              <use xlink:href="img/sprite.svg#user-controls__icon-bookmark"></use>
+            </svg>
+            Закладки: 0
+          </a>
+          <a class="user-controls__basket btn-user-controls btn-user-controls--with-icon" href="#">
+            <svg class="btn-user-controls__icon btn-user-controls__icon--basket" width="14" height="16">
+              <use xlink:href="img/sprite.svg#common__icon-basket"></use>
+            </svg>
+            Корзина: 0
+          </a>
+          <a class="user-controls__checkout btn-user-controls btn-user-controls--checkout" href="#">Оформить заказ</a>
+        </div>
       </div>
     </section>
 

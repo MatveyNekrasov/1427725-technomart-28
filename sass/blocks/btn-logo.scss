@@ -1,14 +1,14 @@
 .btn-logo {
-  display: inline-block;
-  padding-top: 12px;
-  padding-bottom: 13px;
-  min-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 42px;
+  width: 220px;
 
-  text-align: center;
   color: var(--color-white-01);
 
   background-color: var(--color-red-01);
-  box-shadow: inset 0px -5px 0px var(--color-black-a-03);
+  box-shadow: 0px 5px 0px var(--color-red-04);
 
   &:hover:not(&--active),
   &:focus:not(&--active) {

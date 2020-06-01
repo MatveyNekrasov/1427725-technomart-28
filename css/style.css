@@ -60,6 +60,7 @@
   --color-red-01: #ee3643;
   --color-red-02: #ca2c37;
   --color-red-03: #ba2732;
+  --color-red-04: #b52933;
   --color-green-01: #8ed78f;
   --color-green-02: #63a63e;
   --color-green-03: #5fbb2d;
@@ -160,14 +161,14 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-logo {
-  display: inline-block;
-  padding-top: 12px;
-  padding-bottom: 13px;
-  min-width: 220px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 42px;
+  width: 220px;
   color: var(--color-white-01);
   background-color: var(--color-red-01);
-  box-shadow: inset 0px -5px 0px var(--color-black-a-03);
+  box-shadow: 0px 5px 0px var(--color-red-04);
 }
 
 .btn-logo:hover:not(.btn-logo--active), .btn-logo:focus:not(.btn-logo--active) {
@@ -290,12 +291,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-controls__container {
-  min-height: 42px;
   display: flex;
-}
-
-.user-controls__logo {
-  margin-bottom: -5px;
 }
 
 .user-controls__search-form {
@@ -336,6 +332,7 @@ input[type="radio"].visually-hidden {
 
 .user-controls__search-input {
   flex-grow: 1;
+  width: 150px;
   color: var(--color-white-01);
   font-size: 18px;
   line-height: 1.35em;
@@ -361,6 +358,12 @@ input[type="radio"].visually-hidden {
 
 .user-controls__search-input::placeholder {
   color: var(--color-white-01);
+}
+
+.user-controls__buttons {
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .user-controls__bookmarks {
@@ -512,10 +515,8 @@ input[type="radio"].visually-hidden {
 
 .header__user-nav {
   margin-top: 46px;
-}
-
-.user-nav {
   margin-left: auto;
+  max-width: 330px;
 }
 
 .user-nav__controls {
@@ -528,6 +529,8 @@ input[type="radio"].visually-hidden {
 
 .user-nav__buttons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -897,15 +900,15 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   color: var(--color-white-01);
   background-color: var(--color-blue-03);
-  background-image: linear-gradient(to bottom, var(--color-black-a-03) 105px, var(--color-black-a-01) 105px);
+  background-image: linear-gradient(to bottom, var(--color-black-a-03) 104px, var(--color-black-a-01) 104px);
 }
 
 .promo-slider--drills {
-  background-image: linear-gradient(to bottom, var(--color-black-a-03) 105px, var(--color-black-a-01) 105px), url("../img/features__drills.jpg");
+  background-image: linear-gradient(to bottom, var(--color-black-a-03) 104px, var(--color-black-a-01) 104px), url("../img/features__drills.jpg");
 }
 
 .promo-slider--perforators {
-  background-image: linear-gradient(to bottom, var(--color-black-a-03) 105px, var(--color-black-a-01) 105px), url("../img/features__perforators.jpg");
+  background-image: linear-gradient(to bottom, var(--color-black-a-03) 104px, var(--color-black-a-01) 104px), url("../img/features__perforators.jpg");
 }
 
 .promo-slider--hidden {
@@ -1067,7 +1070,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services {
-  padding-top: 65px;
+  padding-top: 85px;
   overflow: hidden;
   background-color: var(--color-white-03);
 }
@@ -1261,9 +1264,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-nav__logo {
-  margin-bottom: 23px;
-  padding-top: 20px;
-  padding-bottom: 18px;
+  min-height: 63px;
+  margin-bottom: 28px;
 }
 
 .footer-nav__address {

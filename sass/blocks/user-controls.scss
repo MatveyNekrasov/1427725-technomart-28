@@ -3,12 +3,7 @@
 }
 
 .user-controls__container {
-  min-height: 42px;
   display: flex;
-}
-
-.user-controls__logo {
-  margin-bottom: -5px;
 }
 
 .user-controls__search-form {
@@ -52,6 +47,7 @@
 
 .user-controls__search-input {
   flex-grow: 1;
+  width: 150px;
 
   color: var(--color-white-01);
   font-size: 18px;
@@ -63,6 +59,15 @@
   &::placeholder {
     color: var(--color-white-01);
   }
+}
+
+.user-controls__buttons {
+  margin-left: auto;
+  // display: none;
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .user-controls__bookmarks {
