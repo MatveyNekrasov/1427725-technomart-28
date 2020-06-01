@@ -1267,7 +1267,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-nav__site-store {
-  width: 547px;
+  width: 567px;
 }
 
 .footer-nav__logo {
@@ -1283,6 +1283,7 @@ input[type="radio"].visually-hidden {
 
 .footer-nav__site-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   margin-top: 32px;
@@ -1292,6 +1293,7 @@ input[type="radio"].visually-hidden {
 
 .footer-nav__store-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   margin-top: 22px;
@@ -1302,6 +1304,7 @@ input[type="radio"].visually-hidden {
 
 .footer-nav__lnk {
   display: block;
+  margin-left: 20px;
   padding: 6px 0;
   color: var(--color-white-04);
   text-decoration: none;

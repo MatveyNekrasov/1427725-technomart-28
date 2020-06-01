@@ -18,7 +18,7 @@
 }
 
 .footer-nav__site-store {
-  width: 547px;
+  width: 567px;
 }
 
 .footer-nav__logo {
@@ -34,6 +34,7 @@
 
 .footer-nav__site-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   margin-top: 32px;
@@ -44,6 +45,7 @@
 
 .footer-nav__store-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   margin-top: 22px;
@@ -53,8 +55,13 @@
   list-style: none;
 }
 
+.footer-nav__item {
+  
+}
+
 .footer-nav__lnk {
   display: block;
+  margin-left: 20px;
   padding: 6px 0;
 
   color: var(--color-white-04);
