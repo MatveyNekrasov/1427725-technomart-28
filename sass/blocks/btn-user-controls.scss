@@ -53,6 +53,20 @@
     }
   }
 
+  &--not-zero {
+    background-color: var(--color-red-01);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-red-01);
+    }
+
+    &:active {
+      color: var(--color-white-a-02);
+
+      background-color: var(--color-red-03);
+    }
+  }
 }
 
 .btn-user-controls__icon {

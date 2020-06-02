@@ -415,6 +415,19 @@ input[type="radio"].visually-hidden {
   background-color: var(--color-green-02);
 }
 
+.btn-user-controls--not-zero {
+  background-color: var(--color-red-01);
+}
+
+.btn-user-controls--not-zero:hover, .btn-user-controls--not-zero:focus {
+  background-color: var(--color-red-01);
+}
+
+.btn-user-controls--not-zero:active {
+  color: var(--color-white-a-02);
+  background-color: var(--color-red-03);
+}
+
 .btn-user-controls__icon {
   position: absolute;
   top: 0;
