@@ -17,7 +17,7 @@
     <section class="user-controls">
       <h2 class="visually-hidden">Пользовательские элементы управления</h2>
       <div class="user-controls__container container-centering ">
-        <a class="btn-logo btn-logo--active">
+        <a class="btn-logo" href="index.html">
           <img src="img/user-controls__logo.svg" width="108" height="18" alt="На главную">
         </a>
         <form class="user-controls__search-form" method="get" action="https://echo.htmlacademy.ru">
@@ -122,11 +122,12 @@
 
   <!-- MAIN -->
 
-  <main class="catalog">
+  <main class="catalog container-centering">
 
     <ul class="catalog__breadcrumbs breadcrumbs">
       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="index.html"><span class="visually-hidden">Главная</span></a>
+        <a class="breadcrumbs__link breadcrumbs__link--home" href="index.html"><span
+            class="visually-hidden">Главная</span></a>
       </li>
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
@@ -134,12 +135,14 @@
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="catalog.html">Инструмент</a>
       </li>
-      <li class="breadcrumbs__item">
+      <li class="breadcrumbs__item breadcrumbs__item--last">
         <a class="breadcrumbs__link breadcrumbs__link--current">Перфораторы</a>
       </li>
     </ul>
 
-    <h1 class="catalog__title">Перфораторы</h1>
+    <div class="catalog__title title-bar">
+      <h1 class="title-bar__title">Перфораторы</h1>
+    </div>
 
     <section class="filter">
       <h2 class="filter__title">Фильтр:</h2>
@@ -240,6 +243,24 @@
         </p>
       </div>
 
+      <ul class="products__grid-x4">
+        <li>
+          <article class="product">
+            <div class="product__img-wrapper">
+              <img class="product__img" src="img/product__bfg9000.jpg" width="184" height="164"
+                alt="Перфоратор BOSCH BFG 9000">
+              <a class="product__btn-buy btn-buy" href="#">Купить</a>
+              <a class="product__btn-bookmark btn-bookmark" href="#">В закладки</a>
+            </div>
+            <h3 class="product__title">Перфоратор BOSCH BFG 9000</h3>
+            <p class="product__price-previous">32500 Р.</p>
+            <a class="product__price-current btn-price" href="#">25500 Р.</a>
+          </article>
+        </li>
+      </ul>
+
+
+      <!-- 
       <ul class="products__list">
         <li class="products__item">
           <article class="product">
@@ -360,6 +381,8 @@
             </a>
           </article>
       </ul>
+ -->
+
 
       <p class="products__pagination">
         <a class="btn btn--active">1</a>

@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  min-height: 89px;
+  // padding-top: 26px;
+  // padding-bottom: 26px;
   padding-left: 28px;
   padding-right: 14px;
 
@@ -15,6 +16,7 @@
 
   color: var(--color-blue-03);
   font-size: 30px;
+  line-height: 1.2em;
   font-weight: 400;
   text-transform: uppercase;
 }

@@ -3,7 +3,6 @@
 @import "globals.scss";
 
 @import "blocks/body.scss";
-@import "blocks/html.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/container-centering.scss";
 @import "blocks/btn.scss";
@@ -34,6 +33,9 @@
 @import "blocks/footer-nav.scss";
 @import "blocks/social-list.scss";
 @import "blocks/footer-contacts.scss";
+
+@import "blocks/breadcrumbs.scss";
+@import "blocks/catalog.scss";
 
 @import "blocks/modal-window.scss";
 @import "blocks/modal-overlay.scss";

@@ -9,6 +9,7 @@
 
   background-color: var(--color-red-01);
   box-shadow: 0px 5px 0px var(--color-red-04);
+  cursor: pointer;
 
   &:hover:not(&--active),
   &:focus:not(&--active) {
@@ -17,5 +18,9 @@
 
   &:active:not(&--active) {
     background-color: var(--color-red-03);
+  }
+
+  &--active {
+    cursor: default;
   }
 }
