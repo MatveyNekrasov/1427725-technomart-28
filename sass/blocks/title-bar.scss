@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
   min-height: 89px;
-  // padding-top: 26px;
-  // padding-bottom: 26px;
+  padding: 22px;
   padding-left: 28px;
   padding-right: 14px;
 
@@ -22,7 +22,5 @@
 }
 
 .title-bar__button {
-  width: 192px;
-  padding-left: 0;
-  padding-right: 0;
+  min-width: 192px;
 }

@@ -452,7 +452,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
   min-height: 89px;
+  padding: 22px;
   padding-left: 28px;
   padding-right: 14px;
   background-color: var(--color-white-02);
@@ -468,9 +470,7 @@ input[type="radio"].visually-hidden {
 }
 
 .title-bar__button {
-  width: 192px;
-  padding-left: 0;
-  padding-right: 0;
+  min-width: 192px;
 }
 
 .header {
