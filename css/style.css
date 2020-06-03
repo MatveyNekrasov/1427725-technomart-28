@@ -52,6 +52,8 @@
   --color-white-05: #c5c5c5;
   --color-white-06: #a9a9a9;
   --color-white-07: #f1f1f1;
+  --color-white-08: #e5e5e5;
+  --color-white-09: #544a3e;
   --color-white-a-01: rgba(255, 255, 255, 1.0);
   --color-white-a-02: rgba(255, 255, 255, 0.5);
   --color-white-a-03: rgba(255, 255, 255, 0.3);
@@ -396,7 +398,8 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-user-controls--with-icon {
-  padding-left: 20px;
+  padding-left: 50px;
+  text-align: left;
 }
 
 .btn-user-controls--with-icon:hover .btn-user-controls__icon, .btn-user-controls--with-icon:focus .btn-user-controls__icon {
@@ -447,7 +450,7 @@ input[type="radio"].visually-hidden {
 
 .btn-user-controls__icon--basket {
   top: 12px;
-  left: 26px;
+  left: 20px;
 }
 
 .title-bar {
@@ -747,7 +750,8 @@ input[type="radio"].visually-hidden {
   min-width: 300px;
   box-sizing: border-box;
   color: var(--color-white-01);
-  background-color: var(--color-blue-03);
+  background-color: var(--color-yellow-03);
+  background-repeat: no-repeat;
 }
 
 .promo-cart--new::after {
@@ -758,27 +762,32 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-cart--materials {
-  background: var(--color-yellow-03) url("../img/promo-cart--materials.svg") no-repeat;
+  background-color: var(--color-yellow-03);
+  background-image: url("../img/promo-cart--materials.svg");
   background-position: 213px 31px;
 }
 
 .promo-cart--instrument {
-  background: var(--color-blue-01) url("../img/promo-cart--instrument.svg") no-repeat;
+  background-color: var(--color-blue-01);
+  background-image: url("../img/promo-cart--instrument.svg");
   background-position: 194px 34px;
 }
 
 .promo-cart--technics {
-  background: var(--color-purple-01) url("../img/promo-cart--technics.svg") no-repeat;
+  background-color: var(--color-purple-01);
+  background-image: url("../img/promo-cart--technics.svg");
   background-position: 191px 31px;
 }
 
 .promo-cart--discount {
-  background: var(--color-green-01) url("../img/promo-cart--discount.svg") no-repeat;
+  background-color: var(--color-green-01);
+  background-image: url("../img/promo-cart--discount.svg");
   background-position: 196px 26px;
 }
 
 .promo-cart--delivery {
-  background: var(--color-yellow-02) url("../img/promo-cart--delivery.svg") no-repeat;
+  background-color: var(--color-yellow-02);
+  background-image: url("../img/promo-cart--delivery.svg");
   background-position: 191px 32px;
 }
 
@@ -902,16 +911,16 @@ input[type="radio"].visually-hidden {
   width: 300px;
   box-sizing: border-box;
   color: var(--color-white-01);
-  background-color: var(--color-blue-03);
+  background-color: var(--color-white-09);
   background-image: linear-gradient(to bottom, var(--color-black-a-03) 104px, var(--color-black-a-01) 104px);
 }
 
 .promo-slider--drills {
-  background-image: linear-gradient(to bottom, var(--color-black-a-03) 104px, var(--color-black-a-01) 104px), url("../img/features__drills.jpg");
+  background-image: url("../img/features__drills.jpg");
 }
 
 .promo-slider--perforators {
-  background-image: linear-gradient(to bottom, var(--color-black-a-03) 104px, var(--color-black-a-01) 104px), url("../img/features__perforators.jpg");
+  background-image: url("../img/features__perforators.jpg");
 }
 
 .promo-slider--hidden {
@@ -1501,6 +1510,45 @@ input[type="radio"].visually-hidden {
   margin-right: 16px;
 }
 
+.btn-pagination {
+  display: inline-block;
+  padding: 9px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid var(--color-white-08);
+  color: var(--color-black-01);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background: var(--color-white-01);
+}
+
+.btn-pagination:hover:not(.btn-pagination--active), .btn-pagination:focus:not(.btn-pagination--active) {
+  border-color: var(--color-white-05);
+}
+
+.btn-pagination:active:not(.btn-pagination--active) {
+  border-color: var(--color-red-01);
+}
+
+.btn-pagination--active {
+  border: 1px solid var(--color-red-01);
+  color: var(--color-white-01);
+  background-color: var(--color-red-01);
+}
+
+.btn-pagination--width--38 {
+  min-width: 38px;
+}
+
+.btn-pagination--width--140 {
+  min-width: 140px;
+}
+
 .catalog-about {
   padding: 0;
   padding-top: 40px;
@@ -1586,6 +1634,16 @@ input[type="radio"].visually-hidden {
   margin-bottom: 48px;
   padding: 0;
   list-style: none;
+}
+
+.catalog__pagination {
+  display: flex;
+  margin-bottom: 59px;
+}
+
+.catalog__about {
+  padding-top: 40px;
+  padding-bottom: 55px;
 }
 
 .modal-window {

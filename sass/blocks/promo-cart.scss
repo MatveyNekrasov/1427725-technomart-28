@@ -10,7 +10,8 @@
 
   color: var(--color-white-01);
 
-  background-color: var(--color-blue-03);
+  background-color: var(--color-yellow-03);
+  background-repeat: no-repeat;
 
   &--new::after {
     position: absolute;
@@ -20,27 +21,32 @@
   }
 
   &--materials {
-    background: var(--color-yellow-03) url("../img/promo-cart--materials.svg") no-repeat;
+    background-color: var(--color-yellow-03);
+    background-image: url("../img/promo-cart--materials.svg");
     background-position: 213px 31px;
   }
 
   &--instrument {
-    background: var(--color-blue-01) url("../img/promo-cart--instrument.svg") no-repeat;
+    background-color: var(--color-blue-01);
+    background-image: url("../img/promo-cart--instrument.svg");
     background-position: 194px 34px;
   }
 
   &--technics {
-    background: var(--color-purple-01) url("../img/promo-cart--technics.svg") no-repeat;
+    background-color: var(--color-purple-01);
+    background-image: url("../img/promo-cart--technics.svg");
     background-position: 191px 31px;
   }
 
   &--discount {
-    background: var(--color-green-01) url("../img/promo-cart--discount.svg") no-repeat;
+    background-color: var(--color-green-01);
+    background-image: url("../img/promo-cart--discount.svg");
     background-position: 196px 26px;
   }
 
   &--delivery {
-    background: var(--color-yellow-02) url("../img/promo-cart--delivery.svg") no-repeat;
+    background-color: var(--color-yellow-02);
+    background-image: url("../img/promo-cart--delivery.svg");
     background-position: 191px 32px;
   }
 }
