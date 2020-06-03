@@ -36,17 +36,14 @@
 
 // Блоки catalog
 @import "blocks/breadcrumbs.scss";
+@import "blocks/filter-price.scss";
 @import "blocks/filter.scss";
 @import "blocks/sort.scss";
 @import "blocks/btn-pagination.scss";
-
-
 @import "blocks/catalog-about.scss";
 @import "blocks/catalog.scss";
 
-
-
-
+// Модальные окна
 @import "blocks/modal-window.scss";
 @import "blocks/modal-overlay.scss";
 @import "blocks/modal-map.scss";

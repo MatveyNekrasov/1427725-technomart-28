@@ -34,7 +34,8 @@
           <a class="user-controls__bookmarks btn-user-controls btn-user-controls--bookmark" href="#">
             Закладки: 0
           </a>
-          <a class="user-controls__basket btn-user-controls btn-user-controls--basket btn-user-controls--not-zero" href="#">
+          <a class="user-controls__basket btn-user-controls btn-user-controls--basket btn-user-controls--not-zero"
+            href="#">
             Корзина: 10
           </a>
           <a class="user-controls__checkout btn-user-controls btn-user-controls--checkout" href="#">Оформить заказ</a>
@@ -142,25 +143,32 @@
 
           <section class="catalog__filter filter">
             <h2 class="visually-hidden">Фильтр</h2>
-
             <form method="get" action="https://echo.htmlacademy.ru">
 
               <fieldset class="filter__fieldset">
                 <legend class="filter__title">Цена:</legend>
-                <div class="filter__price-scale price-scale">
-                  <div class="price-scale__empty-bar">
-                    <div class="price-scale__filled-bar"></div>
+                <div class="filter__price filter-price">
+                  <div class="filter-price__scale">
+                    <div class="filter-price__empty-bar">
+                      <div class="filter-price__filled-bar" style="width: 80%; margin-left: 0%"></div>
+                    </div>
+                    <div class="filter-price__knob-min" style="left: 8.5%" tabindex="0"></div>
+                    <div class="filter-price__knob-max" style="left: 73%" tabindex="0"></div>
                   </div>
-                  <div class="price-scale__knob-min"></div>
-                  <div class="price-scale__knob-max"></div>
-                </div>
-                <div class="filter__price-controls price-controls">
-                  <label class="price-controls__min-label visually-hidden">от
-                    <input class="price-controls__min-input" type="text" name="price-min" value="0">
-                  </label>
-                  <label class="price-controls__max-label visually-hidden">до
-                    <input class="price-controls__max-input" type="text" name="price-max" value="30 000">
-                  </label>
+
+                  <div class="filter-price__controls">
+                    <label class="filter-price__min-label">
+                      <span class="visually-hidden">от</span>
+                      <input class="filter-price__min-input" type="number" step="100" min="0" name="price-min"
+                        value="0">
+                    </label>
+                    <span class="filter-price__hyphen">–</span>
+                    <label class="filter-price__max-label">
+                      <span class="visually-hidden">до</span>
+                      <input class="filter-price__max-input" type="number" step="100" min="0" name="price-max"
+                        value="30000">
+                    </label>
+                  </div>
                 </div>
               </fieldset>
 
@@ -201,7 +209,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="filter__fieldset">
+              <fieldset class="filter__fieldset filter__fieldset--bottom-borderless">
                 <legend class="filter__title">Питание:</legend>
                 <ul class="filter__list">
                   <li>
@@ -383,7 +391,6 @@
             <a class="btn-pagination btn-pagination--width--140" href="#">Следующая</a>
           </section>
       </div>
-
     </div>
 
     <section class="catalog__about catalog-about">
