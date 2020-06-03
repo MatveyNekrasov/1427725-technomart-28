@@ -34,9 +34,18 @@
 @import "blocks/social-list.scss";
 @import "blocks/footer-contacts.scss";
 
+// Блоки catalog
 @import "blocks/breadcrumbs.scss";
-@import "blocks/catalog.scss";
+@import "blocks/filter.scss";
+@import "blocks/sort.scss";
+@import "blocks/pagination.scss";
+
+
 @import "blocks/catalog-about.scss";
+@import "blocks/catalog.scss";
+
+
+
 
 @import "blocks/modal-window.scss";
 @import "blocks/modal-overlay.scss";

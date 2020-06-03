@@ -6,8 +6,7 @@
     <path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" fill="currentColor"></path>
   </symbol>
   <symbol viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="user-controls__icon-search">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 0 1 7.5 15 7.5 7.5 0 1 1 15 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 0 0 2 7.5 5.506 5.506 0 0 0 7.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"
-      fill="currentColor"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 0 1 7.5 15 7.5 7.5 0 1 1 15 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 0 0 2 7.5 5.506 5.506 0 0 0 7.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" fill="currentColor"></path>
   </symbol>
   <symbol viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="user-nav__icon-login">
     <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z" fill="currentColor"></path>
@@ -18,7 +17,12 @@
     <path d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z" fill="currentColor"></path>
   </symbol>
   <symbol viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" id="user-nav__icon-profile">
-    <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"
-      fill="currentColor"></path>
+    <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z" fill="currentColor"></path>
+  </symbol>
+  <symbol viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-up-dir">
+    <path d="M5.5 0L11 10H0" fill="currentColor"></path>
+  </symbol>
+  <symbol viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-down-dir">
+    <path d="M5.5 10L0 0h11" fill="currentColor"></path>
   </symbol>
 </svg>
