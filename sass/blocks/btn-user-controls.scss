@@ -14,29 +14,48 @@
   &:hover,
   &:focus {
     background-color: var(--color-blue-05);
+
+    &::before {
+      opacity: 1.0;
+    }
   }
 
   &:active {
     color: var(--color-white-a-02);
     background-color: var(--color-blue-07);
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 
-  &--with-icon {
-    padding-left: 50px;
+  &--bookmark {
+    padding-left: 44px;
 
     text-align: left;
 
-    &:hover,
-    &:focus {
-      .btn-user-controls__icon {
-        color: var(--color-white-a-01);
-      }
-    }
+    &::before {
+      position: absolute;
+      top: 12px;
+      left: 20px;
+      content: url("../img/icon-bookmark.svg");
 
-    &:active {
-      .btn-user-controls__icon {
-        color: var(--color-white-a-03);
-      }
+      opacity: 0.3;
+    }
+  }
+
+  &--basket {
+    padding-left: 49px;
+
+    text-align: left;
+
+    &::before {
+      position: absolute;
+      top: 11px;
+      left: 26px;
+      content: url("../img/icon-basket.svg");
+
+      opacity: 0.3;
     }
   }
 
@@ -69,22 +88,4 @@
       background-color: var(--color-red-03);
     }
   }
-}
-
-.btn-user-controls__icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  color: var(--color-white-a-03);
-}
-
-.btn-user-controls__icon--bookmark {
-  top: 12px;
-  left: 20px;
-}
-
-.btn-user-controls__icon--basket {
-  top: 12px;
-  left: 20px;
 }
