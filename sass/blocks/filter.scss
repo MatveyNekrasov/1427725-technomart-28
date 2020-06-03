@@ -52,7 +52,6 @@
 
 .filter__list {
   margin: 0;
-  margin-bottom: 28px;
   padding: 0;
 
   font-size: 15px;
@@ -60,6 +59,14 @@
   text-transform: uppercase;
 
   list-style: none;
+
+  &--manufacturer {
+    margin-bottom: 28px;
+  }
+
+  &--power-type {
+    margin-bottom: 39px;
+  }
 }
 
 .filter__label-checkbox {
@@ -114,4 +121,31 @@
 .filter__radio:focus+.filter__label-radio::before {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter__button {
+  display: block;
+
+  padding: 9px;
+  width: 100%;
+  border: 1px solid var(--color-white-08);
+
+  color: var(--color-black-01);
+  font-family: $ptsans;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  background: var(--color-white-01);
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-white-05);
+  }
+
+  &:active {
+    border-color: var(--color-red-01);
+  }
 }
