@@ -54,3 +54,17 @@
 .catalog__pagination {
   grid-area: pagination;
 }
+
+.catalog__grid-3-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 18px;
+
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 48px;
+  padding: 0;
+
+  list-style: none;
+}
