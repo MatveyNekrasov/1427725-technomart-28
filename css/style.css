@@ -140,6 +140,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   background-color: var(--color-red-01);
   border: none;
+  cursor: pointer;
 }
 
 .btn:hover, .btn:focus {
@@ -1909,6 +1910,7 @@ input[type="radio"].visually-hidden {
   width: 35px;
   height: 35px;
   background: url("../img/modal__icon-close.svg") no-repeat center;
+  cursor: pointer;
 }
 
 .modal-window__buttons {
