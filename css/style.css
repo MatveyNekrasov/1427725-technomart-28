@@ -1876,7 +1876,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 55px;
 }
 
-.modal-window {
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -1888,11 +1888,11 @@ input[type="radio"].visually-hidden {
   background: var(--color-blue-a-01);
 }
 
-.modal-window--visible {
+.modal-container--visible {
   display: flex;
 }
 
-.modal-window__box {
+.modal-window {
   position: relative;
   border-top: 7px solid var(--color-red-01);
   box-sizing: border-box;
@@ -1928,14 +1928,14 @@ input[type="radio"].visually-hidden {
   display: none;
   width: 100vw;
   height: 100vh;
-  background-color: var(--color-black-a-04);
+  background-color: var(--color-blue-a-01);
 }
 
 .modal-overlay--visible {
   display: block;
 }
 
-.modal-map__box {
+.modal-map {
   width: 943px;
   min-height: 449px;
 }
@@ -1959,7 +1959,7 @@ input[type="radio"].visually-hidden {
   resize: none;
 }
 
-.modal-writeus__box {
+.modal-writeus {
   width: 620px;
 }
 
@@ -1991,7 +1991,7 @@ input[type="radio"].visually-hidden {
   width: 460px;
 }
 
-.modal-basket__box {
+.modal-basket {
   width: 620px;
 }
 
