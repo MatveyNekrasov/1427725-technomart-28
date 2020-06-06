@@ -1921,20 +1921,6 @@ input[type="radio"].visually-hidden {
   background-color: var(--color-white-07);
 }
 
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--color-blue-a-01);
-}
-
-.modal-overlay--visible {
-  display: block;
-}
-
 .modal-map {
   width: 943px;
   min-height: 449px;
