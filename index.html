@@ -152,12 +152,12 @@
           </button>
 
           <ul class="promo-sliders__list">
-            <li class="promo-slider promo-slider--drills promo-slider--hidden">
+            <li class="promo-slider promo-slider--drills">
               <h3 class="promo-slider__title">Дрели</h3>
               <p class="promo-slider__desc">Соседям на радость!</p>
               <a class="btn" href="#">Открыть каталог</a>
             </li>
-            <li class="promo-slider promo-slider--perforators">
+            <li class="promo-slider promo-slider--perforators promo-slider--visible">
               <h3 class="promo-slider__title">Перфораторы</h3>
               <p class="promo-slider__desc">Настоящие мужские игрушки</p>
               <a class="promo-slider__btn btn" href="catalog.html">Открыть каталог</a>
@@ -165,13 +165,16 @@
           </ul>
 
           <div class="promo-sliders__knobs">
-            <input class="promo-sliders__input visually-hidden" type="radio" name="promo-sliders__knobs"
-              id="promo-sliders__input-id--1" aria-label="Слайд 1">
-            <label class="promo-sliders__knob" for="promo-sliders__input-id--1"></label>
-
-            <input class="promo-sliders__input visually-hidden" type="radio" name="promo-sliders__knobs"
-              id="promo-sliders__input-id--2" aria-label="Слайд 2" checked>
-            <label class="promo-sliders__knob" for="promo-sliders__input-id--2"></label>
+            <label>
+              <input class="promo-sliders__input visually-hidden" type="radio" name="promo-sliders__knobs"
+                aria-label="Первый слайд">
+              <span class="promo-sliders__knob"></span>
+            </label>
+            <label>
+              <input class="promo-sliders__input visually-hidden" type="radio" name="promo-sliders__knobs"
+                aria-label="Второй слайд" checked>
+              <span class="promo-sliders__knob"></span>
+            </label>
           </div>
         </div>
       </div>

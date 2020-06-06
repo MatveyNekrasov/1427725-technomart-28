@@ -877,6 +877,7 @@ input[type="radio"].visually-hidden {
 
 .promo-sliders__knob {
   position: relative;
+  display: block;
   width: 10px;
   height: 10px;
   padding: 6px;
@@ -919,6 +920,7 @@ input[type="radio"].visually-hidden {
   padding-right: 23px;
   width: 300px;
   box-sizing: border-box;
+  display: none;
   color: var(--color-white-01);
   background-color: var(--color-white-09);
   background-image: linear-gradient(to bottom, var(--color-black-a-03) 104px, var(--color-black-a-01) 104px);
@@ -932,8 +934,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/features__perforators.jpg");
 }
 
-.promo-slider--hidden {
-  display: none;
+.promo-slider--visible {
+  display: block;
 }
 
 .promo-slider__title {
