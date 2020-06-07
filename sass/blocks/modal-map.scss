@@ -3,6 +3,17 @@
   min-height: 449px;
 }
 
+.modal-map__img-container {
+  position: relative;
+  margin: 0;
+}
+
+.modal-map__interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .modal-map__img {
   vertical-align: top;
 }
