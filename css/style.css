@@ -1108,7 +1108,7 @@ input[type="radio"].visually-hidden {
 .services__desc {
   margin: 0;
   max-width: 400px;
-  margin-bottom: 71px;
+  margin-bottom: 63px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.85em;
@@ -1116,7 +1116,7 @@ input[type="radio"].visually-hidden {
 
 .services__container {
   display: flex;
-  min-height: 283px;
+  min-height: 291px;
 }
 
 .services__buttons {
@@ -1124,6 +1124,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   width: 240px;
+  margin-top: 7px;
   margin-right: 80px;
 }
 
@@ -1154,29 +1155,30 @@ input[type="radio"].visually-hidden {
   position: absolute;
   content: url("../img/services__delivery.png");
   left: 151px;
-  top: 15px;
+  top: 23px;
 }
 
 .services__item--guarantee::before {
   position: absolute;
   content: url("../img/services__guarantee.png");
   left: 239px;
-  top: -3px;
+  top: 5px;
 }
 
 .services__item--credit::before {
   position: absolute;
   content: url("../img/services__credit.png");
   left: 165px;
-  top: -5px;
+  top: 3px;
 }
 
 .services__item-title {
   position: relative;
   margin: 0;
-  margin: 3px 0 34px;
+  margin: 3px 0 26px;
   color: var(--color-blue-03);
   font-size: 30px;
+  line-height: 1.15em;
   text-transform: uppercase;
   letter-spacing: -0.8px;
 }
