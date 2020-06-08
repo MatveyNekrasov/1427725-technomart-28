@@ -1939,6 +1939,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
+  border: none;
 }
 
 .modal-map__img {
