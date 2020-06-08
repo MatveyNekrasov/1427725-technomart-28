@@ -47,3 +47,30 @@ modalHandler(
   ".modal-writeus-js",
   ".contacts__btn-writeus",
   ".modal-writeus__close-js");
+
+// ---------------------- Services
+
+let servicesBtns = document.querySelectorAll(".btn-services");
+let servicesItems = document.querySelectorAll(".services__item");
+
+for (let i = 0; i < servicesBtns.length; i++) {  
+  servicesBtns[i].addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // make corresponding button active
+    for (let j = 0; j < servicesBtns.length; j++) {
+      servicesBtns[j].classList.remove("btn-services--active");
+      if (i === j) {
+        servicesBtns[j].classList.add("btn-services--active");
+      }
+    }
+
+    // show corresponding list item
+    for (let j = 0; j < servicesItems.length; j++) {
+      servicesItems[j].classList.remove("services__item--visible");
+      if (i === j) {
+        servicesItems[j].classList.add("services__item--visible");
+      }
+    }
+  })
+}
