@@ -8,28 +8,30 @@ function modalHandler(modalName, openBtnsName, closeBtnsName) {
   let openBtns = document.querySelectorAll(openBtnsName);
   let closeBtns = document.querySelectorAll(closeBtnsName);
 
-  if (modalWindow !== null && openBtns !== null && closeBtns != null) {
-    for (let openBtn of openBtns) {
-      openBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        modalWindow.classList.add(modalVisibleClassName);
-      })
-    }
+  if (modalWindow === null || openBtns === null || closeBtns === null)
+    return;
 
-    for (let closeBtn of closeBtns) {
-      closeBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        modalWindow.classList.remove(modalVisibleClassName);
-      })
-    }
-
-    window.addEventListener("keydown", function (e) {
-      if (e.keyCode === 27 && modalWindow.classList.contains(modalVisibleClassName)) {
-        e.preventDefault();
-        modalWindow.classList.remove(modalVisibleClassName);
-      }
+  for (let openBtn of openBtns) {
+    openBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      modalWindow.classList.add(modalVisibleClassName);
     })
   }
+
+  for (let closeBtn of closeBtns) {
+    closeBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      modalWindow.classList.remove(modalVisibleClassName);
+    })
+  }
+
+  window.addEventListener("keydown", function (e) {
+    if (e.keyCode === 27 && modalWindow.classList.contains(modalVisibleClassName)) {
+      e.preventDefault();
+      modalWindow.classList.remove(modalVisibleClassName);
+    }
+  })
+
 }
 
 // basket
@@ -77,6 +79,9 @@ function slideButtonsHandler(buttonSelector, typePrevNext) {
     return;
 
   let promoBtn = document.querySelector(buttonSelector);
+  if (promoBtn === null)
+    return;
+
   promoBtn.addEventListener("click", function (e) {
     e.preventDefault();
     let currentSlideNum = 0;

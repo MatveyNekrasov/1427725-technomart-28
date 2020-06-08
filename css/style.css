@@ -1748,7 +1748,6 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding: 9px;
   margin-right: 10px;
-  margin-bottom: 10px;
   box-sizing: border-box;
   border-radius: 3px;
   border: 1px solid var(--color-white-08);
@@ -1858,7 +1857,7 @@ input[type="radio"].visually-hidden {
   grid-area: pagination;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 49px;
+  margin-bottom: 59px;
 }
 
 .catalog__grid-3-col {
