@@ -1748,6 +1748,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding: 9px;
   margin-right: 10px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   border-radius: 3px;
   border: 1px solid var(--color-white-08);
@@ -1819,7 +1820,7 @@ input[type="radio"].visually-hidden {
 
 .catalog__layout {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 220px 700px;
   grid-template-rows: -webkit-min-content -webkit-min-content 1fr;
   grid-template-rows: min-content min-content 1fr;
   grid-template-areas: "filter-title sort" "filter products" "filter pagination";
@@ -1855,6 +1856,9 @@ input[type="radio"].visually-hidden {
 
 .catalog__pagination {
   grid-area: pagination;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 49px;
 }
 
 .catalog__grid-3-col {
@@ -1868,11 +1872,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 48px;
   padding: 0;
   list-style: none;
-}
-
-.catalog__pagination {
-  display: flex;
-  margin-bottom: 59px;
 }
 
 .catalog__about {

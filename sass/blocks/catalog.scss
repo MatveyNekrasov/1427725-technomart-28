@@ -14,7 +14,7 @@
 
 .catalog__layout {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 220px 700px;
   grid-template-rows: min-content min-content 1fr;
   grid-template-areas:
     "filter-title sort"
@@ -53,6 +53,9 @@
 
 .catalog__pagination {
   grid-area: pagination;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 59px;
 }
 
 .catalog__grid-3-col {
@@ -67,11 +70,6 @@
   padding: 0;
 
   list-style: none;
-}
-
-.catalog__pagination {
-  display: flex;
-  margin-bottom: 59px;
 }
 
 .catalog__about {
