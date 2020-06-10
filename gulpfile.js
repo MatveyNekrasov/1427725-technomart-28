@@ -29,10 +29,10 @@ gulp.task("html", function () {
   return gulp
     .src("source/*.html")
     .pipe(posthtml([include()])) // шаблонизация тег-директивы <include src="file.*"></include>
-    .pipe(htmlmin({              // минификация html-файлов
-      collapseWhitespace: true,
-      removeComments: true
-    }))
+    // .pipe(htmlmin({              // минификация html-файлов
+    //   collapseWhitespace: true,
+    //   removeComments: true
+    // }))
     .pipe(gulp.dest("build"));
 });
 
