@@ -17,6 +17,7 @@ const htmlmin = require("gulp-htmlmin"); // минификатор html
 const uglify = require("gulp-uglify"); // минификатор js, для работы с es6 нужен babel
 const babel = require("gulp-babel"); // babel is a tool that helps you write code in the latest version of JavaScript
 const del = require("del"); // удаление папок/файлов
+const ghpages = require("gh-pages");
 
 // удаление папки build
 gulp.task("clean", function () {
@@ -49,7 +50,7 @@ gulp.task("scss", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))    // запись карты кода
     .pipe(gulp.dest("build/css"))
-    .pipe(server.stream({ match: '**/*.css' }));
+    .pipe(server.stream({ match: "**/*.css" }));
 });
 
 // обработка *.css - postcss.autoprefixer + csso -> build
@@ -58,7 +59,7 @@ gulp.task("css", function () {
     .src("source/css/*.css")
     .pipe(postcss([autoprefixer()]))
     .pipe(csso())
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest("build/css"))
 });
 
@@ -78,9 +79,10 @@ gulp.task("optImages", function () {
   return gulp
     .src(["source/img/**/*.{jpg,png,svg}", "!source/img/**/sprite.svg"])   // sprite.svg исключён т.к. собран вручную
     .pipe(imagemin([
-      imagemin.optipng({ optimizationLevel: 3 }),            // оптимизация png
-      imagemin.mozjpeg({ quality: 75, progressive: true }),  // оптимизация jpeg
-      imagemin.svgo()                                        // оптимизация svg
+      imagemin.gifsicle({ interlaced: true }),              // оптимизация gif
+      imagemin.mozjpeg({ quality: 75, progressive: true }), // оптимизация jpeg
+      imagemin.optipng({ optimizationLevel: 3 }),           // оптимизация png      
+      imagemin.svgo()                                       // оптимизация svg
     ]))
     .pipe(gulp.dest("build/img"));
 });
@@ -97,7 +99,7 @@ gulp.task("sprite", function () {
 // копирование изображений без оптимизации
 gulp.task("copyImages", function () {
   return gulp
-    .src(["source/img/**/*.{jpg,png,svg}"])
+    .src(["source/img/**/*.{jpg,png,svg}", "!source/img/**/sprite.svg"])
     .pipe(gulp.dest("build/img"));
 });
 
@@ -116,7 +118,7 @@ gulp.task("copyOthers", function () {
 gulp.task("serve", function () {
   server.init({
     server: "build", // Serve files from the build directory
-    notify: false, // Don't show any notifications in the browser
+    notify: false, // Don"t show any notifications in the browser
     ui: false // Disable UI completely. Browsersync includes a user-interface that is accessed via a separate port. The UI allows to controls all devices, push sync updates and much more.
   });
 
@@ -127,8 +129,12 @@ gulp.task("serve", function () {
   gulp.watch("source/*.html").on("change", gulp.series(("html"), server.reload));
 });
 
+gulp.task("deploy", function () {
+  return ghpages.publish("build", function (err) { });
+});
+
 // глобальные задачи
-gulp.task("build", gulp.series("clean", "html", "scss", "css", "minjs", "optImages", "copyOthers"));
+gulp.task("build", gulp.series("clean", gulp.parallel("html", "scss", "css", "minjs", "optImages", "copyOthers")));
 gulp.task("start", gulp.series("build", "serve"));
 
 // задача по умолчанию при запуске gulp без параметров
