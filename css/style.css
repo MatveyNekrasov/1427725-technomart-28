@@ -351,10 +351,6 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.user-controls__search-input::-webkit-input-placeholder {
-  color: var(--color-white-01);
-}
-
 .user-controls__search-input::-moz-placeholder {
   color: var(--color-white-01);
 }
