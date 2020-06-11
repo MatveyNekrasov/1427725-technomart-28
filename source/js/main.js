@@ -4,9 +4,9 @@
 
 function modalHandler(modalName, openBtnsName, closeBtnsName) {
   const modalVisibleClassName = "modal-container--visible";
-  let modalWindow = document.querySelector(modalName);
-  let openBtns = document.querySelectorAll(openBtnsName);
-  let closeBtns = document.querySelectorAll(closeBtnsName);
+  const modalWindow = document.querySelector(modalName);
+  const openBtns = document.querySelectorAll(openBtnsName);
+  const closeBtns = document.querySelectorAll(closeBtnsName);
 
   if (modalWindow === null || openBtns === null || closeBtns === null)
     return;
@@ -15,14 +15,14 @@ function modalHandler(modalName, openBtnsName, closeBtnsName) {
     openBtn.addEventListener("click", function (e) {
       e.preventDefault();
       modalWindow.classList.add(modalVisibleClassName);
-    })
+    });
   }
 
   for (let closeBtn of closeBtns) {
     closeBtn.addEventListener("click", function (e) {
       e.preventDefault();
       modalWindow.classList.remove(modalVisibleClassName);
-    })
+    });
   }
 
   window.addEventListener("keydown", function (e) {
@@ -30,7 +30,7 @@ function modalHandler(modalName, openBtnsName, closeBtnsName) {
       e.preventDefault();
       modalWindow.classList.remove(modalVisibleClassName);
     }
-  })
+  });
 
 }
 
@@ -69,7 +69,7 @@ for (let i = 0; i < promoKnobs.length; i++) {
         promoSliders[j].classList.add("promo-slider--visible");
       }
     }
-  })
+  });
 }
 
 // change slider by clicking next/prev button
@@ -78,8 +78,8 @@ function slideButtonsHandler(buttonSelector, typePrevNext) {
   if (typePrevNext !== "prev" && typePrevNext !== "next")
     return;
 
-  let promoBtn = document.querySelector(buttonSelector);
-  if (promoBtn === null)
+  const promoBtn = document.querySelector(buttonSelector);
+  if (promoBtn == null)
     return;
 
   promoBtn.addEventListener("click", function (e) {
@@ -139,5 +139,5 @@ for (let i = 0; i < servicesBtns.length; i++) {
         servicesItems[j].classList.add("services__item--visible");
       }
     }
-  })
+  });
 }
