@@ -433,7 +433,7 @@
         <h2 class="visually-hidden">Контактная информация</h2>
 
         <p class="footer-contacts__copyright">
-          © 2010–2020 Компания «Техномарт»<br>
+          © 2010‒2020 Компания «Техномарт»<br>
           Все права защищены
         </p>
 
@@ -460,7 +460,7 @@
           <a class="footer-contacts__link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-contacts__developed">
-          Разработано —
+          Разработано ‒
           <a class="footer-contacts__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
@@ -468,6 +468,8 @@
   </footer>
 
   <!-- MODALS -->
+  <div class="modal-bg"></div>
+
   <section class="modal-basket-js modal-container">
     <div class="modal-basket modal-window">
       <h2 class="modal-basket__title">Товар добавлен в корзину!</h2>
@@ -493,37 +495,41 @@
     </div>
   </section>
 
-  <section class="modal-writeus-js modal-container">
+  <section class="modal-writeus-js modal-container modal-container--bounce">
     <div class="modal-writeus modal-window">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="modal-writeus-form-js" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-writeus__wrapper">
           <p class="modal-writeus__name-email">
             <label class="modal-writeus__label">
               <span class="modal-writeus__label-text">Ваше имя:</span>
-              <input class="modal-writeus__input writeus-input" type="text" name="name" placeholder="Имя Фамилия">
+              <input class="modal-writeus__input modal-writeus-name-js writeus-input" type="text" name="name"
+                placeholder="Имя Фамилия">
             </label>
             <label class="modal-writeus__label">
               <span class="modal-writeus__label-text">Ваш e-mail:</span>
-              <input class="modal-writeus__input writeus-input" type="email" name="email"
+              <input class="modal-writeus__input modal-writeus-email-js writeus-input" type="email" name="email"
                 placeholder="email@example.com">
             </label>
           </p>
           <label class="modal-writeus__label">
             <span class="modal-writeus__label-text">Текст письма:</span>
-            <textarea class="modal-writeus__textarea writeus-input writeus-input--textarea" name="textarea"
-              placeholder="В свободной форме"></textarea>
+            <textarea class="modal-writeus__textarea modal-writeus-text-js writeus-input writeus-input--textarea"
+              name="textarea" placeholder="В свободной форме"></textarea>
           </label>
         </div>
         <p class="modal-window__buttons">
           <button class="modal-writeus__submit btn" type="submit">Отправить</button>
         </p>
       </form>
-      <button class="modal-window__close modal-writeus__close-js" type="button" aria-label="Закрыть окно"></button>
+      <button class="modal-window__close modal-writeus-close-js" type="button" aria-label="Закрыть окно"></button>
     </div>
   </section>
 
-  <script src="js/main.min.js"></script>
+  <script src="js/modal-basket.js"></script>
+  <script src="js/modal-map.js"></script>
+  <script src="js/modal-writeus.js"></script>
+  <script src="js/sliders.js"></script>
 </body>
 
 </html>

@@ -50,7 +50,7 @@ gulp.task("scss", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))    // запись карты кода
     .pipe(gulp.dest("build/css"))
-    .pipe(server.stream({ match: "**/*.css" }));
+    .pipe(server.stream());
 });
 
 // обработка *.css - postcss.autoprefixer + csso -> build
@@ -63,15 +63,17 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/css"))
 });
 
-// минификация *.js файлов
-gulp.task("minjs", function () {
+// обработка *.js файлов
+gulp.task("js", function () {
   return gulp
-    .src(["source/js/*.js"])
+    .src(["source/js/**/*.js"])
+    .pipe(plumber())
     .pipe(gulp.dest("build/js"))
     .pipe(babel())
     .pipe(uglify())
     .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
 });
 
 // оптимизация изображений
@@ -122,6 +124,9 @@ gulp.task("serve", function () {
     ui: false // Disable UI completely. Browsersync includes a user-interface that is accessed via a separate port. The UI allows to controls all devices, push sync updates and much more.
   });
 
+  // отслеживание изменений *.js
+  gulp.watch("source/js/**/*.js").on("change", gulp.series("js"));
+
   // отслеживание изменений *.scss
   gulp.watch("source/sass/**/*.scss").on("change", gulp.series("scss"));
 
@@ -134,7 +139,7 @@ gulp.task("deploy", function () {
 });
 
 // глобальные задачи
-gulp.task("build", gulp.series("clean", gulp.parallel("html", "scss", "css", "minjs", "optImages", "copyOthers")));
+gulp.task("build", gulp.series("clean", gulp.parallel("html", "scss", "css", "js", "optImages", "copyOthers")));
 gulp.task("start", gulp.series("build", "serve"));
 
 // задача по умолчанию при запуске gulp без параметров
