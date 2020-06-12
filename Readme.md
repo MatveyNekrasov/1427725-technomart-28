@@ -2,7 +2,7 @@
 
 * Студент: [Матвей 🦞 Некрасов](https://up.htmlacademy.ru/htmlcss/28/user/1427725).
 * Наставник: [Ярослав 🐱 Шевцов](https://up.htmlacademy.ru/htmlcss/28/user/170516).
-* Опубликованная версия: [matveynekrasov.ru/1427725-technomart-28](https://matveynekrasov.ru/1427725-technomart-28/)
+* Опубликованная версия: [matveynekrasov.ru/htmlacademy-technomart-28](https://matveynekrasov.ru/htmlacademy-technomart-28/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
