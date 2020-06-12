@@ -35,6 +35,7 @@
 
 :root {
   --color-black-01: #000000;
+  --color-black-02: rgb(30, 30, 30);
   --color-black-a-01: rgba(0, 0, 0, 0);
   --color-black-a-02: rgba(0, 0, 0, 0.15);
   --color-black-a-03: rgba(0, 0, 0, 0.25);
@@ -1481,6 +1482,18 @@ input[type="radio"].visually-hidden {
   padding-top: 40px;
   padding-bottom: 55px; }
 
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black-02);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+  .modal-bg--visible {
+    visibility: visible;
+    opacity: 0.8; }
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -1489,10 +1502,77 @@ input[type="radio"].visually-hidden {
   height: 100%;
   width: 100%;
   justify-content: center;
-  align-items: center;
-  background: var(--color-blue-a-01); }
+  align-items: center; }
   .modal-container--visible {
     display: flex; }
+  .modal-container--bounce {
+    -webkit-animation: bounce 0.6s;
+            animation: bounce 0.6s; }
+  .modal-container--shake {
+    -webkit-animation: shake 0.6s;
+            animation: shake 0.6s; }
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px); }
+  70% {
+    transform: translateY(30px); }
+  90% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px); }
+  70% {
+    transform: translateY(30px); }
+  90% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px); }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px); } }
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px); }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px); } }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px); }
+  70% {
+    transform: translateY(30px); }
+  90% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
 
 .modal-window {
   position: relative;
