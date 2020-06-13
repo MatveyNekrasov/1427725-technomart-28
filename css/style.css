@@ -1246,8 +1246,10 @@ input[type='radio'].visually-hidden
     overflow: hidden; 
     flex-direction: column;
 
+    box-sizing: border-box;
     height: 174px;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
 
     justify-content: center;
     align-items: center;
