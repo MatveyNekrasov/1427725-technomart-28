@@ -17,7 +17,8 @@ const htmlmin = require("gulp-htmlmin"); // минификатор html
 const uglify = require("gulp-uglify"); // минификатор js, для работы с es6 нужен babel
 const babel = require("gulp-babel"); // babel is a tool that helps you write code in the latest version of JavaScript
 const del = require("del"); // удаление папок/файлов
-const ghpages = require("gh-pages");
+const ghpages = require("gh-pages"); // deploy
+const csscomb = require("gulp-csscomb"); // сортирофка свойств css
 
 // удаление папки build
 gulp.task("clean", function () {
@@ -40,10 +41,11 @@ gulp.task("html", function () {
 gulp.task("scss", function () {
   return gulp
     .src("source/sass/style.scss")
-    .pipe(plumber())               // вывод ошибок препроцессорного кода в консоль
-    .pipe(sourcemap.init())        // инициализация карты кода
-    .pipe(sass())                  // компиляция sass-файлов
+    .pipe(plumber())                 // вывод ошибок препроцессорного кода в консоль
+    .pipe(sourcemap.init())          // инициализация карты кода
+    .pipe(sass())                    // компиляция sass-файлов
     .pipe(postcss([autoprefixer()])) // расстановка префиксов для старых браузеров
+    .pipe(csscomb())                 // сортирофка свойств css
     .pipe(rename("style.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())                  // минификация
@@ -58,6 +60,7 @@ gulp.task("css", function () {
   return gulp
     .src("source/css/*.css")
     .pipe(postcss([autoprefixer()]))
+    .pipe(csscomb())
     .pipe(csso())
     .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest("build/css"))
