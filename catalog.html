@@ -171,33 +171,63 @@
               <legend class="filter__title filter__title--manufacturer">Производители:</legend>
               <ul class="filter__list filter__list--manufacturer">
                 <li>
-                  <label>
-                    <input class="filter__checkbox visually-hidden" name="manufacturer-bosch" type="checkbox" checked="">
-                    <span class="filter__label-checkbox">Bosch</span>
+                  <label class="check filter__checkbox">
+                    <input class="check__input visually-hidden" name="manufacturer-bosch" type="checkbox" checked="">
+                    <svg class="check__on" width="27" height="23">
+                      <use xlink:href="img/sprite.svg#filter__checkbox-on"></use>
+                    </svg>
+                    <svg class="check__off" width="27" height="23">
+                      <use xlink:href="img/sprite.svg#filter__checkbox-off"></use>
+                    </svg>
+                    <span class="check__text">Bosch</span>
                   </label>
                 </li>
                 <li>
-                  <label>
-                    <input class="filter__checkbox visually-hidden" name="manufacturer-interskol" type="checkbox">
-                    <span class="filter__label-checkbox">Интерскол</span>
+                  <label class="check filter__checkbox">
+                    <input class="check__input visually-hidden" name="manufacturer-interskol" type="checkbox">
+                    <svg class="check__on" width="27" height="23">
+                      <use xlink:href="img/sprite.svg#filter__checkbox-on"></use>
+                    </svg>
+                    <svg class="check__off" width="27" height="23">
+                      <use xlink:href="img/sprite.svg#filter__checkbox-off"></use>
+                    </svg>
+                    <span class="check__text">Интерскол</span>
                   </label>
                 </li>
                 <li>
-                  <label>
-                    <input class="filter__checkbox visually-hidden" name="manufacturer-makita" type="checkbox" checked="">
-                    <span class="filter__label-checkbox">Makita</span>
+                  <label class="check filter__checkbox">
+                    <input class="check__input visually-hidden" name="manufacturer-makita" type="checkbox" checked="">
+                    <svg class="check__on" width="27" height="23">
+                      <use xlink:href="img/sprite.svg#filter__checkbox-on"></use>
+                    </svg>
+                    <svg class="check__off" width="27" height="23">
+                      <use xlink:href="img/sprite.svg#filter__checkbox-off"></use>
+                    </svg>
+                    <span class="check__text">Makita</span>
                   </label>
                 </li>
                 <li>
-                  <label>
-                    <input class="filter__checkbox visually-hidden" name="manufacturer-dewalt" type="checkbox">
-                    <span class="filter__label-checkbox">Dewalt</span>
+                  <label class="check filter__checkbox">
+                    <input class="check__input visually-hidden" name="manufacturer-dewalt" type="checkbox">
+                    <svg class="check__on" width="27" height="23">
+                      <use xlink:href="img/sprite.svg#filter__checkbox-on"></use>
+                    </svg>
+                    <svg class="check__off" width="27" height="23">
+                      <use xlink:href="img/sprite.svg#filter__checkbox-off"></use>
+                    </svg>
+                    <span class="check__text">Dewalt</span>
                   </label>
                 </li>
                 <li>
-                  <label>
-                    <input class="filter__checkbox visually-hidden" name="manufacturer-hitachi" type="checkbox">
-                    <span class="filter__label-checkbox">Hitachi</span>
+                  <label class="check filter__checkbox">
+                    <input class="check__input visually-hidden" name="manufacturer-hitachi" type="checkbox">
+                    <svg class="check__on" width="27" height="23">
+                      <use xlink:href="img/sprite.svg#filter__checkbox-on"></use>
+                    </svg>
+                    <svg class="check__off" width="27" height="23">
+                      <use xlink:href="img/sprite.svg#filter__checkbox-off"></use>
+                    </svg>
+                    <span class="check__text">Hitachi</span>
                   </label>
                 </li>
               </ul>
@@ -207,15 +237,27 @@
               <legend class="filter__title filter__title--power-type">Питание:</legend>
               <ul class="filter__list filter__list--power-type">
                 <li>
-                  <label>
-                    <input class="filter__radio visually-hidden" name="power-type" value="cordless" type="radio" checked="">
-                    <span class="filter__label-radio">Аккумуляторные</span>
+                  <label class="radio filter__radio">
+                    <input class="radio__input visually-hidden" name="power-type" value="cordless" type="radio" checked="">
+                    <svg class="radio__on" width="25" height="26">
+                      <use xlink:href="img/sprite.svg#filter__radio-on"></use>
+                    </svg>
+                    <svg class="radio__off" width="25" height="26">
+                      <use xlink:href="img/sprite.svg#filter__radio-off"></use>
+                    </svg>
+                    <span class="radio__text">Аккумуляторные</span>
                   </label>
                 </li>
                 <li>
-                  <label>
-                    <input class="filter__radio visually-hidden" name="power-type" value="corded" type="radio">
-                    <span class="filter__label-radio">Сетевые</span>
+                  <label class="radio filter__radio">
+                    <input class="radio__input visually-hidden" name="power-type" value="corded" type="radio">
+                    <svg class="radio__on" width="25" height="26">
+                      <use xlink:href="img/sprite.svg#filter__radio-on"></use>
+                    </svg>
+                    <svg class="radio__off" width="25" height="26">
+                      <use xlink:href="img/sprite.svg#filter__radio-off"></use>
+                    </svg>
+                    <span class="radio__text">Сетевые</span>
                   </label>
                 </li>
               </ul>
@@ -489,7 +531,7 @@
     </div>
   </section>
 
-  <script src="js/modal-basket.js"></script>
+  <script src="js/modal-basket.min.js"></script>
 </body>
 
 </html>
