@@ -40,7 +40,9 @@
   justify-content: center;
   align-items: center;
   height: 174px;
-  padding-bottom: 5px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  padding: 10px;
   overflow: hidden;
 }
 
