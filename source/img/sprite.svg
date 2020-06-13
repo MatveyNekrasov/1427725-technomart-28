@@ -25,4 +25,18 @@
   <symbol viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-down-dir">
     <path d="M5.5 10L0 0h11" fill="currentColor"></path>
   </symbol>
+  <symbol id="filter__checkbox-off" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h17c1.65 0 3 1.35 3 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm18 3c0-.542-.458-1-1-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3z" fill="currentColor"></path>
+  </symbol>
+  <symbol id="filter__checkbox-on" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829L12.24 12.439 7.285 7.486z" fill="currentColor"></path>
+    <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0020 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" fill="currentColor"></path>
+  </symbol>
+  <symbol id="filter__radio-off" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.354C0 6.451 5.597.854 12.5.854S25 6.451 25 13.354s-5.597 12.5-12.5 12.5S0 20.257 0 13.354zm21 0c0-4.687-3.813-8.5-8.5-8.5-4.687 0-8.5 3.813-8.5 8.5 0 4.687 3.813 8.5 8.5 8.5 4.687 0 8.5-3.813 8.5-8.5z" fill="currentColor"></path>
+  </symbol>
+  <symbol id="filter__radio-on" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.354C0 6.451 5.597.854 12.5.854S25 6.451 25 13.354s-5.597 12.5-12.5 12.5S0 20.257 0 13.354zm21 0c0-4.687-3.813-8.5-8.5-8.5-4.687 0-8.5 3.813-8.5 8.5 0 4.687 3.813 8.5 8.5 8.5 4.687 0 8.5-3.813 8.5-8.5z" fill="currentColor"></path>
+    <path d="M12.5 17.854a4.5 4.5 0 100-9 4.5 4.5 0 000 9z" fill="currentColor"></path>
+  </symbol>
 </svg>
