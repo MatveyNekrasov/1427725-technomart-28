@@ -1,0 +1,44 @@
+.check {
+  display: inline-flex;
+}
+
+.check__on {
+  display: none;
+}
+
+.check__off {
+  display: block;
+}
+
+.check__on,
+.check__off {
+  margin-top: -2px;
+  margin-right: 8px;
+
+  color: var(--color-white-05);
+}
+
+.check__input:checked~.check__on {
+  display: block;
+}
+
+.check__input:checked~.check__off {
+  display: none;
+}
+
+.check__input:focus~.check__on,
+.check__input:focus~.check__off {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.check__input:hover~.check__on,
+.check__input:hover~.check__off {
+  color: var(--color-white-13);
+}
+
+.check__input:disabled~.check__on,
+.check__input:disabled~.check__off,
+.check__input:disabled~.check__text {
+  color: var(--color-white-14);
+}

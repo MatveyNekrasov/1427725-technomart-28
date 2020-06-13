@@ -1,0 +1,44 @@
+.radio {
+  display: inline-flex;
+}
+
+.radio__on {
+  display: none;
+}
+
+.radio__off {
+  display: block;
+}
+
+.radio__on,
+.radio__off {
+  margin-top: -2px;
+  margin-right: 10px;
+
+  color: var(--color-white-05);
+}
+
+.radio__input:checked~.radio__on {
+  display: block;
+}
+
+.radio__input:checked~.radio__off {
+  display: none;
+}
+
+.radio__input:focus~.radio__on,
+.radio__input:focus~.radio__off {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.radio__input:hover~.radio__on,
+.radio__input:hover~.radio__off {
+  color: var(--color-white-13);
+}
+
+.radio__input:disabled~.radio__on,
+.radio__input:disabled~.radio__off,
+.radio__input:disabled~.radio__text {
+  color: var(--color-white-14);
+}
