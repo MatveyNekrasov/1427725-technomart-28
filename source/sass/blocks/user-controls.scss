@@ -63,9 +63,6 @@
 
 .user-controls__buttons {
   margin-left: auto;
-  // display: none;
-  // display: flex;
-  // flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
