@@ -2218,7 +2218,14 @@ input[type='radio'].visually-hidden
     text-decoration: none;
 
     color: var(--color-black-a-05);
-    border-bottom: 1px dotted red;
+    border: none;
+    border-bottom: 1px dotted var(--color-red-01);
+}
+.sort__link:hover:not(.sort__link--active),
+.sort__link:focus:not(.sort__link--active)
+{
+    color: var(--color-black-01);
+    border-style: solid;
 }
 .sort__link--active
 {
