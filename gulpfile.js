@@ -18,7 +18,7 @@ const uglify = require("gulp-uglify"); // минификатор js, для ра
 const babel = require("gulp-babel"); // babel is a tool that helps you write code in the latest version of JavaScript
 const del = require("del"); // удаление папок/файлов
 const ghpages = require("gh-pages"); // deploy
-const csscomb = require("gulp-csscomb"); // сортирофка свойств css
+const csscomb = require("gulp-csscomb"); // сортировка свойств css
 
 // удаление папки build
 gulp.task("clean", function () {
@@ -45,7 +45,7 @@ gulp.task("scss", function () {
     .pipe(sourcemap.init())          // инициализация карты кода
     .pipe(sass())                    // компиляция sass-файлов
     .pipe(postcss([autoprefixer()])) // расстановка префиксов для старых браузеров
-    .pipe(csscomb())                 // сортирофка свойств css
+    .pipe(csscomb())                 // сортировка свойств css
     .pipe(rename("style.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())                  // минификация
