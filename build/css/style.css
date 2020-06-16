@@ -1909,7 +1909,9 @@ input[type='radio'].visually-hidden
     margin: 0;
     padding: 0;
 
-    list-style: none;
+    list-style: none; 
+
+    flex-wrap: wrap;
 }
 
 .breadcrumbs__item
@@ -1922,7 +1924,7 @@ input[type='radio'].visually-hidden
 
     content: url('../img/breadcrumbs__right.svg');
 }
-.breadcrumbs__item--last::after
+.breadcrumbs__item:last-child::after
 {
     content: none;
 }
