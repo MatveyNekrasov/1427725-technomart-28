@@ -167,6 +167,7 @@ input[type='radio'].visually-hidden
 
     cursor: pointer; 
     text-align: center;
+    vertical-align: middle;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -1700,6 +1701,7 @@ input[type='radio'].visually-hidden
     width: 42px;
     height: 42px;
 
+    vertical-align: middle;
     text-decoration: none; 
 
     color: white;
@@ -2257,6 +2259,7 @@ input[type='radio'].visually-hidden
     padding: 9px;
 
     text-align: center;
+    vertical-align: middle;
     text-decoration: none;
     text-transform: uppercase;
 
